@@ -101,14 +101,16 @@ npm run check   # 27/27: статусы, SEO, hreflang, JSON-LD, sitemap, robots
 | Ветка / папка | `main` → `/docs` |
 | Опубликованный сайт | `https://mokoaibot.github.io/azbut-ai-site/` |
 
-Pages раздаёт **статический снимок** публичной части, сгенерированный из тех же данных и шаблонов:
+Pages раздаёт **статический снимок** публичной части, сгенерированный из тех же данных и шаблонов. Готовый `docs/` уже запушен в `main`: включите Pages в **Settings → Pages → Build and deployment → Deploy from a branch → Branch `main`, folder `/docs` → Save**. Публикация обычно занимает 1–2 минуты.
 
 ```bash
 npm run build:static   # пересобрать docs/ (52 страницы RU+EN, ассеты, sitemap, robots, 404)
 git add docs && git commit -m "Update static build" && git push
 ```
 
-Скрипт `scripts/build-static.js` поднимает временный SSR-сервер с `SITE_ORIGIN=https://mokoaibot.github.io`, обходит все страницы, затем переписывает пути под базу `/azbut-ai-site`: ассеты, внутренние ссылки, `canonical`, `hreflang`, OG и JSON-LD. Добавляются `.nojekyll`, `404.html`, `sitemap.xml`, `robots.txt` и заглушка `/admin/`.
+Скрипт `scripts/build-static.js` поднимает временный SSR-сервер с `SITE_ORIGIN=https://mokoaibot.github.io`, обходит все страницы и переписывает пути под базу `/azbut-ai-site`: ассеты, внутренние ссылки, `canonical`, `hreflang`, OG и JSON-LD. Добавляются `.nojekyll`, `404.html`, `sitemap.xml`, `robots.txt` и заглушка `/admin/`.
+
+Автодеплой через GitHub Actions — шаблон `scripts/pages-workflow.yml.example`. Чтобы запушить его как `.github/workflows/pages.yml`, токену нужен `workflow` scope, а для включения Pages через API — `Pages: write`. С текущим fine-grained PAT этих прав нет, поэтому используется ручной source из ветки; для статического сайта его достаточно.
 
 **Важное ограничение:** GitHub Pages не умеет запускать Node.js. Поэтому на Pages:
 
@@ -116,7 +118,7 @@ git add docs && git commit -m "Update static build" && git push
 - **не работают** админка, REST API, запись в JSON, загрузка картинок и отправка заявок — в формах показывается аккуратное пояснение;
 - полный сайт с админкой нужно размещать на VPS / Render / Railway / Fly.io и т.п. (`npm start`).
 
-Токены и `.env` в репозиторий не коммитятся: для пуша используется PAT только в рантайме, а `.gitignore` исключает `data/audit.log`, бэкапы и загрузки.
+Токены и `.env` в репозиторий не коммитятся: `.gitignore` исключает `data/audit.log`, бэкапы и загрузки. Переданный в чате PAT рекомендуется отозвать и выпустить заново с минимальными правами.
 
 ---
 
