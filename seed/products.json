@@ -1,0 +1,810 @@
+[
+  {
+    "id": "pr-01",
+    "slug": "kompressor-konditsionera-240846",
+    "sku": "240846",
+    "brand": "HC-CARGO",
+    "category": "Двигатели",
+    "title": {
+      "ru": "Компрессор кондиционера, арт. 240846",
+      "en": "AC compressor, part 240846"
+    },
+    "summary": {
+      "ru": "Автомобильный компрессор кондиционера для двигателей MB OM457HLA/501LA/502LA.",
+      "en": "Automotive AC compressor for MB OM457HLA/501LA/502LA engines."
+    },
+    "description": {
+      "ru": "Автомобильный компрессор кондиционера для двигателей MB OM457HLA/501LA/502LA.",
+      "en": "Automotive AC compressor for MB OM457HLA/501LA/502LA engines."
+    },
+    "price": null,
+    "currency": "BYN",
+    "priceNote": {
+      "ru": "Цена по запросу",
+      "en": "Price on request"
+    },
+    "inStock": false,
+    "image": "/assets/img/product-1.webp",
+    "gallery": [
+      "/assets/img/product-1.webp"
+    ],
+    "specs": [
+      {
+        "label": {
+          "ru": "Бренд",
+          "en": "Brand"
+        },
+        "value": {
+          "ru": "HC-CARGO",
+          "en": "HC-CARGO"
+        }
+      },
+      {
+        "label": {
+          "ru": "Артикул",
+          "en": "Part number"
+        },
+        "value": {
+          "ru": "240846",
+          "en": "240846"
+        }
+      },
+      {
+        "label": {
+          "ru": "Применение",
+          "en": "Application"
+        },
+        "value": {
+          "ru": "MB OM457HLA/501LA/502LA",
+          "en": "MB OM457HLA/501LA/502LA"
+        }
+      }
+    ],
+    "published": true,
+    "updatedAt": "2026-11-02T14:00:00.000Z",
+    "seo": {
+      "title": {
+        "ru": "Компрессор кондиционера, арт. 240846 — купить оптом | АЗБУТ",
+        "en": "AC compressor, part 240846 — wholesale | AZBUT"
+      },
+      "description": {
+        "ru": "Автомобильный компрессор кондиционера для двигателей MB OM457HLA/501LA/502LA. Артикул 240846. Поставка со склада в Минске.",
+        "en": "Automotive AC compressor for MB OM457HLA/501LA/502LA engines. Part 240846. Supply from Minsk warehouse."
+      }
+    }
+  },
+  {
+    "id": "pr-02",
+    "slug": "tsepnaya-zvezdochka-az71882",
+    "sku": "AZ71882",
+    "brand": "JOHN DEERE",
+    "category": "Приводы",
+    "title": {
+      "ru": "Цепная звездочка AZ71882, 28 зубьев",
+      "en": "Chain sprocket AZ71882, 28T"
+    },
+    "summary": {
+      "ru": "Оригинальная цепная звездочка John Deere с 28 зубьями.",
+      "en": "Original John Deere chain sprocket with 28 teeth."
+    },
+    "description": {
+      "ru": "Оригинальная цепная звездочка John Deere с 28 зубьями.",
+      "en": "Original John Deere chain sprocket with 28 teeth."
+    },
+    "price": 185.0,
+    "currency": "BYN",
+    "priceNote": null,
+    "inStock": true,
+    "image": "/assets/img/product-2.webp",
+    "gallery": [
+      "/assets/img/product-2.webp"
+    ],
+    "specs": [
+      {
+        "label": {
+          "ru": "Бренд",
+          "en": "Brand"
+        },
+        "value": {
+          "ru": "JOHN DEERE",
+          "en": "JOHN DEERE"
+        }
+      },
+      {
+        "label": {
+          "ru": "Артикул",
+          "en": "Part number"
+        },
+        "value": {
+          "ru": "AZ71882",
+          "en": "AZ71882"
+        }
+      },
+      {
+        "label": {
+          "ru": "Зубья",
+          "en": "Teeth"
+        },
+        "value": {
+          "ru": "28",
+          "en": "28"
+        }
+      }
+    ],
+    "published": true,
+    "updatedAt": "2026-11-02T14:00:00.000Z",
+    "seo": {
+      "title": {
+        "ru": "Цепная звездочка AZ71882, 28 зубьев — купить оптом | АЗБУТ",
+        "en": "Chain sprocket AZ71882, 28T — wholesale | AZBUT"
+      },
+      "description": {
+        "ru": "Оригинальная цепная звездочка John Deere с 28 зубьями. Артикул AZ71882. Поставка со склада в Минске.",
+        "en": "Original John Deere chain sprocket with 28 teeth. Part AZ71882. Supply from Minsk warehouse."
+      }
+    }
+  },
+  {
+    "id": "pr-03",
+    "slug": "tsepnaya-zvezdochka-az71883",
+    "sku": "AZ71883",
+    "brand": "JOHN DEERE",
+    "category": "Приводы",
+    "title": {
+      "ru": "Цепная звездочка AZ71883",
+      "en": "Chain sprocket AZ71883"
+    },
+    "summary": {
+      "ru": "Цепная звездочка Z=28 для сельскохозяйственной техники.",
+      "en": "Chain sprocket Z=28 for agricultural machinery."
+    },
+    "description": {
+      "ru": "Цепная звездочка Z=28 для сельскохозяйственной техники.",
+      "en": "Chain sprocket Z=28 for agricultural machinery."
+    },
+    "price": 190.0,
+    "currency": "BYN",
+    "priceNote": null,
+    "inStock": true,
+    "image": "/assets/img/product-3.webp",
+    "gallery": [
+      "/assets/img/product-3.webp"
+    ],
+    "specs": [
+      {
+        "label": {
+          "ru": "Бренд",
+          "en": "Brand"
+        },
+        "value": {
+          "ru": "JOHN DEERE",
+          "en": "JOHN DEERE"
+        }
+      },
+      {
+        "label": {
+          "ru": "Артикул",
+          "en": "Part number"
+        },
+        "value": {
+          "ru": "AZ71883",
+          "en": "AZ71883"
+        }
+      },
+      {
+        "label": {
+          "ru": "Зубья",
+          "en": "Teeth"
+        },
+        "value": {
+          "ru": "28",
+          "en": "28"
+        }
+      }
+    ],
+    "published": true,
+    "updatedAt": "2026-11-02T14:00:00.000Z",
+    "seo": {
+      "title": {
+        "ru": "Цепная звездочка AZ71883 — купить оптом | АЗБУТ",
+        "en": "Chain sprocket AZ71883 — wholesale | AZBUT"
+      },
+      "description": {
+        "ru": "Цепная звездочка Z=28 для сельскохозяйственной техники. Артикул AZ71883. Поставка со склада в Минске.",
+        "en": "Chain sprocket Z=28 for agricultural machinery. Part AZ71883. Supply from Minsk warehouse."
+      }
+    }
+  },
+  {
+    "id": "pr-04",
+    "slug": "prokladka-gbts-r116516",
+    "sku": "R116516",
+    "brand": "JOHN DEERE",
+    "category": "Двигатели",
+    "title": {
+      "ru": "Прокладка ГБЦ R116516",
+      "en": "Cylinder head gasket R116516"
+    },
+    "summary": {
+      "ru": "Прокладка головки блока цилиндров для дизельных двигателей John Deere.",
+      "en": "Cylinder head gasket for John Deere diesel engines."
+    },
+    "description": {
+      "ru": "Прокладка головки блока цилиндров для дизельных двигателей John Deere.",
+      "en": "Cylinder head gasket for John Deere diesel engines."
+    },
+    "price": 74.0,
+    "currency": "BYN",
+    "priceNote": null,
+    "inStock": true,
+    "image": "/assets/img/product-4.webp",
+    "gallery": [
+      "/assets/img/product-4.webp"
+    ],
+    "specs": [
+      {
+        "label": {
+          "ru": "Бренд",
+          "en": "Brand"
+        },
+        "value": {
+          "ru": "JOHN DEERE",
+          "en": "JOHN DEERE"
+        }
+      },
+      {
+        "label": {
+          "ru": "Артикул",
+          "en": "Part number"
+        },
+        "value": {
+          "ru": "R116516",
+          "en": "R116516"
+        }
+      }
+    ],
+    "published": true,
+    "updatedAt": "2026-11-02T14:00:00.000Z",
+    "seo": {
+      "title": {
+        "ru": "Прокладка ГБЦ R116516 — купить оптом | АЗБУТ",
+        "en": "Cylinder head gasket R116516 — wholesale | AZBUT"
+      },
+      "description": {
+        "ru": "Прокладка головки блока цилиндров для дизельных двигателей John Deere. Артикул R116516. Поставка со склада в Минске.",
+        "en": "Cylinder head gasket for John Deere diesel engines. Part R116516. Supply from Minsk warehouse."
+      }
+    }
+  },
+  {
+    "id": "pr-05",
+    "slug": "prokladka-klapannoy-kryshki-04205894",
+    "sku": "04205894",
+    "brand": "DEUTZ",
+    "category": "Двигатели",
+    "title": {
+      "ru": "Прокладка клапанной крышки Deutz 04205894",
+      "en": "Deutz valve cover gasket 04205894"
+    },
+    "summary": {
+      "ru": "Прокладка клапанной крышки для дизелей Deutz 1013.",
+      "en": "Valve cover gasket for Deutz 1013 diesel engines."
+    },
+    "description": {
+      "ru": "Прокладка клапанной крышки для дизелей Deutz 1013.",
+      "en": "Valve cover gasket for Deutz 1013 diesel engines."
+    },
+    "price": null,
+    "currency": "BYN",
+    "priceNote": {
+      "ru": "Цена по запросу",
+      "en": "Price on request"
+    },
+    "inStock": false,
+    "image": "/assets/img/product-5.webp",
+    "gallery": [
+      "/assets/img/product-5.webp"
+    ],
+    "specs": [
+      {
+        "label": {
+          "ru": "Бренд",
+          "en": "Brand"
+        },
+        "value": {
+          "ru": "DEUTZ",
+          "en": "DEUTZ"
+        }
+      },
+      {
+        "label": {
+          "ru": "Артикул",
+          "en": "Part number"
+        },
+        "value": {
+          "ru": "04205894",
+          "en": "04205894"
+        }
+      },
+      {
+        "label": {
+          "ru": "Двигатель",
+          "en": "Engine"
+        },
+        "value": {
+          "ru": "BF6M1013",
+          "en": "BF6M1013"
+        }
+      }
+    ],
+    "published": true,
+    "updatedAt": "2026-11-02T14:00:00.000Z",
+    "seo": {
+      "title": {
+        "ru": "Прокладка клапанной крышки Deutz 04205894 — купить оптом | АЗБУТ",
+        "en": "Deutz valve cover gasket 04205894 — wholesale | AZBUT"
+      },
+      "description": {
+        "ru": "Прокладка клапанной крышки для дизелей Deutz 1013. Артикул 04205894. Поставка со склада в Минске.",
+        "en": "Valve cover gasket for Deutz 1013 diesel engines. Part 04205894. Supply from Minsk warehouse."
+      }
+    }
+  },
+  {
+    "id": "pr-06",
+    "slug": "prokladka-vypusknogo-kollektora-1825436c1",
+    "sku": "1825436C1",
+    "brand": "DETROIT DIESEL",
+    "category": "Двигатели",
+    "title": {
+      "ru": "Прокладка выпускного коллектора 1825436C1",
+      "en": "Exhaust manifold gasket 1825436C1"
+    },
+    "summary": {
+      "ru": "Для тяжёлых дизельных двигателей Detroit Diesel DT-530E, Navistar DT466E.",
+      "en": "For heavy diesel engines Detroit Diesel DT-530E, Navistar DT466E."
+    },
+    "description": {
+      "ru": "Для тяжёлых дизельных двигателей Detroit Diesel DT-530E, Navistar DT466E.",
+      "en": "For heavy diesel engines Detroit Diesel DT-530E, Navistar DT466E."
+    },
+    "price": 96.0,
+    "currency": "BYN",
+    "priceNote": null,
+    "inStock": true,
+    "image": "/assets/img/product-6.webp",
+    "gallery": [
+      "/assets/img/product-6.webp"
+    ],
+    "specs": [
+      {
+        "label": {
+          "ru": "Бренд",
+          "en": "Brand"
+        },
+        "value": {
+          "ru": "DETROIT DIESEL",
+          "en": "DETROIT DIESEL"
+        }
+      },
+      {
+        "label": {
+          "ru": "Артикул",
+          "en": "Part number"
+        },
+        "value": {
+          "ru": "1825436C1",
+          "en": "1825436C1"
+        }
+      }
+    ],
+    "published": true,
+    "updatedAt": "2026-11-02T14:00:00.000Z",
+    "seo": {
+      "title": {
+        "ru": "Прокладка выпускного коллектора 1825436C1 — купить оптом | АЗБУТ",
+        "en": "Exhaust manifold gasket 1825436C1 — wholesale | AZBUT"
+      },
+      "description": {
+        "ru": "Для тяжёлых дизельных двигателей Detroit Diesel DT-530E, Navistar DT466E. Артикул 1825436C1. Поставка со склада в Минске.",
+        "en": "For heavy diesel engines Detroit Diesel DT-530E, Navistar DT466E. Part 1825436C1. Supply from Minsk warehouse."
+      }
+    }
+  },
+  {
+    "id": "pr-07",
+    "slug": "zamok-stykovki-transporternykh-lent-4-g-300w",
+    "sku": "4-G-300W",
+    "brand": "ANKER",
+    "category": "Приводы",
+    "title": {
+      "ru": "Замок для стыковки транспортерных лент 4-G-300W",
+      "en": "Conveyor belt fastener 4-G-300W"
+    },
+    "summary": {
+      "ru": "Быстрая стыковка и ремонт краёв ленты без демонтажа оборудования.",
+      "en": "Quick splicing and edge repair without dismantling equipment."
+    },
+    "description": {
+      "ru": "Быстрая стыковка и ремонт краёв ленты без демонтажа оборудования.",
+      "en": "Quick splicing and edge repair without dismantling equipment."
+    },
+    "price": 58.0,
+    "currency": "BYN",
+    "priceNote": null,
+    "inStock": true,
+    "image": "/assets/img/product-7.webp",
+    "gallery": [
+      "/assets/img/product-7.webp"
+    ],
+    "specs": [
+      {
+        "label": {
+          "ru": "Бренд",
+          "en": "Brand"
+        },
+        "value": {
+          "ru": "ANKER",
+          "en": "ANKER"
+        }
+      },
+      {
+        "label": {
+          "ru": "Типоразмер",
+          "en": "Size"
+        },
+        "value": {
+          "ru": "4-G-300W",
+          "en": "4-G-300W"
+        }
+      }
+    ],
+    "published": true,
+    "updatedAt": "2026-11-02T14:00:00.000Z",
+    "seo": {
+      "title": {
+        "ru": "Замок для стыковки транспортерных лент 4-G-300W — купить оптом | АЗБУТ",
+        "en": "Conveyor belt fastener 4-G-300W — wholesale | AZBUT"
+      },
+      "description": {
+        "ru": "Быстрая стыковка и ремонт краёв ленты без демонтажа оборудования. Артикул 4-G-300W. Поставка со склада в Минске.",
+        "en": "Quick splicing and edge repair without dismantling equipment. Part 4-G-300W. Supply from Minsk warehouse."
+      }
+    }
+  },
+  {
+    "id": "pr-08",
+    "slug": "girlyanda-bakhroma-ip65",
+    "sku": "ARD-FRINGE-10",
+    "brand": "Ardecoled",
+    "category": "Иллюминация",
+    "title": {
+      "ru": "Гирлянда «Бахрома» IP65, 10 м",
+      "en": "Fringe garland IP65, 10 m"
+    },
+    "summary": {
+      "ru": "Профессиональная уличная гирлянда с влаго- и морозозащитой для фасадов и деревьев.",
+      "en": "Professional outdoor garland with moisture and frost protection for facades and trees."
+    },
+    "description": {
+      "ru": "Профессиональная уличная гирлянда с влаго- и морозозащитой для фасадов и деревьев.",
+      "en": "Professional outdoor garland with moisture and frost protection for facades and trees."
+    },
+    "price": 320.0,
+    "currency": "BYN",
+    "priceNote": null,
+    "inStock": true,
+    "image": "/assets/img/product-8.webp",
+    "gallery": [
+      "/assets/img/product-8.webp"
+    ],
+    "specs": [
+      {
+        "label": {
+          "ru": "Защита",
+          "en": "IP rating"
+        },
+        "value": {
+          "ru": "IP65",
+          "en": "IP65"
+        }
+      },
+      {
+        "label": {
+          "ru": "Длина",
+          "en": "Length"
+        },
+        "value": {
+          "ru": "10 м",
+          "en": "10 m"
+        }
+      },
+      {
+        "label": {
+          "ru": "Питание",
+          "en": "Power"
+        },
+        "value": {
+          "ru": "220 В",
+          "en": "220 V"
+        }
+      }
+    ],
+    "published": true,
+    "updatedAt": "2026-11-02T14:00:00.000Z",
+    "seo": {
+      "title": {
+        "ru": "Гирлянда «Бахрома» IP65, 10 м — купить оптом | АЗБУТ",
+        "en": "Fringe garland IP65, 10 m — wholesale | AZBUT"
+      },
+      "description": {
+        "ru": "Профессиональная уличная гирлянда с влаго- и морозозащитой для фасадов и деревьев. Артикул ARD-FRINGE-10. Поставка со склада в Минске.",
+        "en": "Professional outdoor garland with moisture and frost protection for facades and trees. Part ARD-FRINGE-10. Supply from Minsk warehouse."
+      }
+    }
+  },
+  {
+    "id": "pr-09",
+    "slug": "string-light-10m",
+    "sku": "ARD-STRING-10",
+    "brand": "Ardecoled",
+    "category": "Иллюминация",
+    "title": {
+      "ru": "Стринг-лайт 10 м, тёплый белый",
+      "en": "String light 10 m, warm white"
+    },
+    "summary": {
+      "ru": "Гирлянда-нить для улицы и интерьера, влагозащищённое исполнение.",
+      "en": "String light for outdoor and indoor use, weatherproof design."
+    },
+    "description": {
+      "ru": "Гирлянда-нить для улицы и интерьера, влагозащищённое исполнение.",
+      "en": "String light for outdoor and indoor use, weatherproof design."
+    },
+    "price": 210.0,
+    "currency": "BYN",
+    "priceNote": null,
+    "inStock": true,
+    "image": "/assets/img/light-figures.webp",
+    "gallery": [
+      "/assets/img/light-figures.webp"
+    ],
+    "specs": [
+      {
+        "label": {
+          "ru": "Защита",
+          "en": "IP rating"
+        },
+        "value": {
+          "ru": "IP65",
+          "en": "IP65"
+        }
+      },
+      {
+        "label": {
+          "ru": "Длина",
+          "en": "Length"
+        },
+        "value": {
+          "ru": "10 м",
+          "en": "10 m"
+        }
+      },
+      {
+        "label": {
+          "ru": "Цвет",
+          "en": "Color"
+        },
+        "value": {
+          "ru": "тёплый белый",
+          "en": "warm white"
+        }
+      }
+    ],
+    "published": true,
+    "updatedAt": "2026-11-02T14:00:00.000Z",
+    "seo": {
+      "title": {
+        "ru": "Стринг-лайт 10 м, тёплый белый — купить оптом | АЗБУТ",
+        "en": "String light 10 m, warm white — wholesale | AZBUT"
+      },
+      "description": {
+        "ru": "Гирлянда-нить для улицы и интерьера, влагозащищённое исполнение. Артикул ARD-STRING-10. Поставка со склада в Минске.",
+        "en": "String light for outdoor and indoor use, weatherproof design. Part ARD-STRING-10. Supply from Minsk warehouse."
+      }
+    }
+  },
+  {
+    "id": "pr-10",
+    "slug": "3d-figura-olen",
+    "sku": "ARD-3D-DEER",
+    "brand": "Ardecoled",
+    "category": "Иллюминация",
+    "title": {
+      "ru": "3D-фигура «Олень», 1,8 м",
+      "en": "3D deer figure, 1.8 m"
+    },
+    "summary": {
+      "ru": "Светодиодная объёмная фигура для городского и коммерческого оформления.",
+      "en": "LED volumetric figure for urban and commercial decoration."
+    },
+    "description": {
+      "ru": "Светодиодная объёмная фигура для городского и коммерческого оформления.",
+      "en": "LED volumetric figure for urban and commercial decoration."
+    },
+    "price": 1250.0,
+    "currency": "BYN",
+    "priceNote": null,
+    "inStock": true,
+    "image": "/assets/img/light-figures.webp",
+    "gallery": [
+      "/assets/img/light-figures.webp"
+    ],
+    "specs": [
+      {
+        "label": {
+          "ru": "Высота",
+          "en": "Height"
+        },
+        "value": {
+          "ru": "1,8 м",
+          "en": "1.8 m"
+        }
+      },
+      {
+        "label": {
+          "ru": "Защита",
+          "en": "IP rating"
+        },
+        "value": {
+          "ru": "IP65",
+          "en": "IP65"
+        }
+      }
+    ],
+    "published": true,
+    "updatedAt": "2026-11-02T14:00:00.000Z",
+    "seo": {
+      "title": {
+        "ru": "3D-фигура «Олень», 1,8 м — купить оптом | АЗБУТ",
+        "en": "3D deer figure, 1.8 m — wholesale | AZBUT"
+      },
+      "description": {
+        "ru": "Светодиодная объёмная фигура для городского и коммерческого оформления. Артикул ARD-3D-DEER. Поставка со склада в Минске.",
+        "en": "LED volumetric figure for urban and commercial decoration. Part ARD-3D-DEER. Supply from Minsk warehouse."
+      }
+    }
+  },
+  {
+    "id": "pr-11",
+    "slug": "pika-gidromolota",
+    "sku": "HM-PIKE-135",
+    "brand": "АЗБУТ",
+    "category": "Гидравлика",
+    "title": {
+      "ru": "Пика для гидромолота 135 мм",
+      "en": "Hydraulic breaker chisel 135 mm"
+    },
+    "summary": {
+      "ru": "Износостойкая пика для гидромолотов различных модификаций.",
+      "en": "Wear-resistant chisel for various hydraulic breaker models."
+    },
+    "description": {
+      "ru": "Износостойкая пика для гидромолотов различных модификаций.",
+      "en": "Wear-resistant chisel for various hydraulic breaker models."
+    },
+    "price": 140.0,
+    "currency": "BYN",
+    "priceNote": null,
+    "inStock": true,
+    "image": "/assets/img/product-6.webp",
+    "gallery": [
+      "/assets/img/product-6.webp"
+    ],
+    "specs": [
+      {
+        "label": {
+          "ru": "Диаметр",
+          "en": "Diameter"
+        },
+        "value": {
+          "ru": "135 мм",
+          "en": "135 mm"
+        }
+      },
+      {
+        "label": {
+          "ru": "Материал",
+          "en": "Material"
+        },
+        "value": {
+          "ru": "легированная сталь",
+          "en": "alloy steel"
+        }
+      }
+    ],
+    "published": true,
+    "updatedAt": "2026-11-02T14:00:00.000Z",
+    "seo": {
+      "title": {
+        "ru": "Пика для гидромолота 135 мм — купить оптом | АЗБУТ",
+        "en": "Hydraulic breaker chisel 135 mm — wholesale | AZBUT"
+      },
+      "description": {
+        "ru": "Износостойкая пика для гидромолотов различных модификаций. Артикул HM-PIKE-135. Поставка со склада в Минске.",
+        "en": "Wear-resistant chisel for various hydraulic breaker models. Part HM-PIKE-135. Supply from Minsk warehouse."
+      }
+    }
+  },
+  {
+    "id": "pr-12",
+    "slug": "podshipnik-ntn-6208",
+    "sku": "6208",
+    "brand": "NTN",
+    "category": "Запчасти",
+    "title": {
+      "ru": "Подшипник NTN 6208",
+      "en": "NTN 6208 bearing"
+    },
+    "summary": {
+      "ru": "Шариковый радиальный подшипник для промышленного и сельхозоборудования.",
+      "en": "Deep groove ball bearing for industrial and agricultural equipment."
+    },
+    "description": {
+      "ru": "Шариковый радиальный подшипник для промышленного и сельхозоборудования.",
+      "en": "Deep groove ball bearing for industrial and agricultural equipment."
+    },
+    "price": 89.0,
+    "currency": "BYN",
+    "priceNote": null,
+    "inStock": true,
+    "image": "/assets/img/product-7.webp",
+    "gallery": [
+      "/assets/img/product-7.webp"
+    ],
+    "specs": [
+      {
+        "label": {
+          "ru": "Бренд",
+          "en": "Brand"
+        },
+        "value": {
+          "ru": "NTN",
+          "en": "NTN"
+        }
+      },
+      {
+        "label": {
+          "ru": "Тип",
+          "en": "Type"
+        },
+        "value": {
+          "ru": "радиальный шариковый",
+          "en": "deep groove ball"
+        }
+      },
+      {
+        "label": {
+          "ru": "Обозначение",
+          "en": "Designation"
+        },
+        "value": {
+          "ru": "6208",
+          "en": "6208"
+        }
+      }
+    ],
+    "published": true,
+    "updatedAt": "2026-11-02T14:00:00.000Z",
+    "seo": {
+      "title": {
+        "ru": "Подшипник NTN 6208 — купить оптом | АЗБУТ",
+        "en": "NTN 6208 bearing — wholesale | AZBUT"
+      },
+      "description": {
+        "ru": "Шариковый радиальный подшипник для промышленного и сельхозоборудования. Артикул 6208. Поставка со склада в Минске.",
+        "en": "Deep groove ball bearing for industrial and agricultural equipment. Part 6208. Supply from Minsk warehouse."
+      }
+    }
+  }
+]

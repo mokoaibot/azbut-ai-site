@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /azbut-ai-site/admin/
+Disallow: /azbut-ai-site/api/
+Disallow: /azbut-ai-site/data/
+
+Sitemap: https://mokoaibot.github.io/azbut-ai-site/sitemap.xml

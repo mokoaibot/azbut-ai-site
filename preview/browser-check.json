@@ -1,0 +1,88 @@
+{
+  "results": [
+    {
+      "w": 320,
+      "W": 320,
+      "scrollW": 320,
+      "headers": 1,
+      "burgers": 1,
+      "h1": 1,
+      "h1text": "Надежность в деталях и делах",
+      "hero": 320,
+      "cards": 4,
+      "bodyH": 10064,
+      "errs": [],
+      "ext": []
+    },
+    {
+      "w": 390,
+      "W": 390,
+      "scrollW": 390,
+      "headers": 1,
+      "burgers": 1,
+      "h1": 1,
+      "h1text": "Надежность в деталях и делах",
+      "hero": 390,
+      "cards": 4,
+      "bodyH": 9673,
+      "errs": [],
+      "ext": []
+    },
+    {
+      "w": 768,
+      "W": 768,
+      "scrollW": 768,
+      "headers": 1,
+      "burgers": 1,
+      "h1": 1,
+      "h1text": "Надежность в деталях и делах",
+      "hero": 768,
+      "cards": 4,
+      "bodyH": 6555,
+      "errs": [],
+      "ext": []
+    },
+    {
+      "w": 960,
+      "W": 960,
+      "scrollW": 960,
+      "headers": 1,
+      "burgers": 1,
+      "h1": 1,
+      "h1text": "Надежность в деталях и делах",
+      "hero": 960,
+      "cards": 4,
+      "bodyH": 6765,
+      "errs": [],
+      "ext": []
+    },
+    {
+      "w": 1440,
+      "W": 1440,
+      "scrollW": 1440,
+      "headers": 1,
+      "burgers": 1,
+      "h1": 1,
+      "h1text": "Надежность в деталях и делах",
+      "hero": 1439,
+      "cards": 4,
+      "bodyH": 5358,
+      "errs": [],
+      "ext": []
+    }
+  ],
+  "cat": {
+    "cards": 8,
+    "scrollW": 390,
+    "W": 390,
+    "filters": 3,
+    "h1": 1
+  },
+  "admin": {
+    "title": "Дашборд | Админка АЗБУТ",
+    "cards": 6,
+    "nav": 10,
+    "section": "Дашборд"
+  },
+  "adminErrors": []
+}

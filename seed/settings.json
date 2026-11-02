@@ -1,0 +1,60 @@
+{
+  "siteName": {
+    "ru": "АЗБУТ",
+    "en": "AZBUT"
+  },
+  "tagline": {
+    "ru": "Надежность в деталях и делах",
+    "en": "Reliability in details and deeds"
+  },
+  "shortDescription": {
+    "ru": "ООО «Азбут» — белорусский поставщик промышленного оборудования, запчастей для спецтехники и профессиональной иллюминации. Работаем с предприятиями и дилерами по Беларуси, ЕАЭС и за рубежом.",
+    "en": "Azbut LLC is a Belarusian supplier of industrial equipment, spare parts for special machinery and professional lighting. We work with enterprises and dealers across Belarus, the EAEU and abroad."
+  },
+  "phone1": "+375 (29) 331 3870",
+  "phone2": "+375 (17) 360 3870",
+  "email": "info@azbut.by",
+  "address": {
+    "ru": "Республика Беларусь, 220053, г. Минск, ул. Будславская, д. 29, к. 22",
+    "en": "29 Budslawskaya St., office 22, 220053 Minsk, Belarus"
+  },
+  "unp": "193944782",
+  "companyLegal": {
+    "ru": "ООО «Азбут», УНП 193944782",
+    "en": "Azbut LLC, UNP 193944782"
+  },
+  "workingHours": {
+    "ru": "Пн–Пт, 09:00–18:00",
+    "en": "Mon–Fri, 09:00–18:00"
+  },
+  "whatsapp": "https://wa.me/375293313870",
+  "telegram": "https://t.me/azbut_bot",
+  "viber": "viber://chat?number=%2B375293313870",
+  "linkedin": "https://www.linkedin.com/company/azbut/",
+  "instagram": "https://www.instagram.com/azbut_llc/",
+  "wechat": "",
+  "heroImage": "/assets/img/hero.webp",
+  "heroSmall": "/assets/img/hero-640.webp",
+  "logo": "/assets/img/logo.webp",
+  "favicon": "/assets/img/favicon.png",
+  "ogImage": "/assets/img/og-image.webp",
+  "analytics": {
+    "yandexMetrika": "",
+    "ga4": ""
+  },
+  "seo": {
+    "titleSuffix": {
+      "ru": " | АЗБУТ, Минск",
+      "en": " | AZBUT, Minsk"
+    },
+    "defaultDescription": {
+      "ru": "АЗБУТ — поставка запчастей для спецтехники, промышленного оборудования и профессиональной иллюминации оптом со склада в Минске.",
+      "en": "AZBUT — wholesale supply of spare parts, industrial equipment and professional lighting from a warehouse in Minsk."
+    }
+  },
+  "footerNote": {
+    "ru": "Экспертиза команды — более 17 лет. Юридическое лицо ООО «Азбут» зарегистрировано в 2025 году как правопреемник ИП.",
+    "en": "The team has over 17 years of expertise. Azbut LLC was registered in 2025 as the legal successor of a sole proprietorship."
+  },
+  "updatedAt": "2026-11-02T14:00:00.000Z"
+}

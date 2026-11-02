@@ -1,0 +1,171 @@
+{
+  "home": {
+    "title": {
+      "ru": "Запчасти для спецтехники, иллюминация и ВЭД | АЗБУТ",
+      "en": "Spare parts, lighting and foreign trade | AZBUT"
+    },
+    "description": {
+      "ru": "ООО «Азбут» поставляет запчасти для спецтехники, промышленные комплектующие, световое оборудование и сопровождает внешнеэкономические сделки. Склад в Минске, доставка по Беларуси и ЕАЭС.",
+      "en": "Azbut LLC supplies spare parts for special machinery, industrial components, lighting equipment and supports foreign trade operations. Warehouse in Minsk, delivery across Belarus and the EAEU."
+    },
+    "h1": {
+      "ru": "Надежность в деталях и делах",
+      "en": "Reliability in details and deeds"
+    },
+    "heroTitle": {
+      "ru": "Надежность в деталях и делах",
+      "en": "Reliability in details and deeds"
+    },
+    "heroSubtitle": {
+      "ru": "Заряжаем энергией ваши идеи: техника, свет, комплектующие и логистика для проектов, которые должны работать без перебоев.",
+      "en": "We power your ideas: machinery, light, components and logistics for projects that must run without interruption."
+    },
+    "heroCta": {
+      "ru": "Оставить заявку",
+      "en": "Request a quote"
+    },
+    "aboutTitle": {
+      "ru": "АЗБУТ о компании",
+      "en": "AZBUT about the company"
+    },
+    "aboutText": {
+      "ru": "АЗБУТ — белорусский поставщик и эксперт в сфере внешнеэкономической деятельности. Мы обеспечиваем предприятия и коммерческие структуры промышленным оборудованием, спецтехникой, запасными частями и современными системами освещения. Работаем напрямую с производителями, подбираем решения под задачу и берём на себя документальное сопровождение.",
+      "en": "AZBUT is a Belarusian supplier and foreign-trade expert. We equip enterprises and commercial organizations with industrial equipment, special machinery, spare parts and modern lighting systems. We work directly with manufacturers, select solutions for each task and handle the documentation."
+    },
+    "stats": [
+      {
+        "value": "17+",
+        "label": {
+          "ru": "лет экспертизы команды",
+          "en": "years of team expertise"
+        }
+      },
+      {
+        "value": "28",
+        "label": {
+          "ru": "стран географии поставок",
+          "en": "countries supplied"
+        }
+      },
+      {
+        "value": "30+",
+        "label": {
+          "ru": "категорий деталей",
+          "en": "part categories"
+        }
+      }
+    ],
+    "seoTitle": {
+      "ru": "Запчасти для спецтехники и иллюминация оптом — АЗБУТ, Минск",
+      "en": "Wholesale spare parts and lighting — AZBUT, Minsk"
+    },
+    "seoDescription": {
+      "ru": "Запчасти для сельхоз-, строительной и коммунальной техники, подшипники, редукторы, гирлянды IP65 и ВЭД-сопровождение. Со склада в Минске.",
+      "en": "Spare parts for agricultural, construction and municipal machinery, bearings, gearboxes, IP65 garlands and foreign-trade support. From Minsk warehouse."
+    }
+  },
+  "about": {
+    "title": {
+      "ru": "О компании | АЗБУТ",
+      "en": "About us | AZBUT"
+    },
+    "description": {
+      "ru": "ООО «Азбут» — поставщик спецтехники, запчастей и светотехнического оборудования. Узнайте о направлениях работы, географии поставок и стандартах качества.",
+      "en": "Azbut LLC supplies special machinery, spare parts and lighting equipment. Learn about our operations, delivery geography and quality standards."
+    },
+    "h1": {
+      "ru": "О компании АЗБУТ",
+      "en": "About AZBUT"
+    },
+    "body": {
+      "ru": "Мы связываем ведущих мировых производителей с конечными потребителями на рынках ЕАЭС и дальнего зарубежья. Осуществляем масштабные экспортно-импортные операции, подбираем промышленные комплектующие, спецтехнику и сезонную светотехнику.\n\nНаша аудитория — государственные и частные предприятия строительной, коммунальной и сельскохозяйственной отраслей, оптовые компании, дилеры и розничные сети. Для каждого клиента подбираем условия поставки, сроки отгрузки и формат расчётов.\n\nВся продукция проходит контроль, имеет необходимые сертификаты соответствия ЕАС и официальную гарантию.",
+      "en": "We connect leading global manufacturers with end customers in the EAEU and beyond. We handle large export-import operations and source industrial components, special machinery and seasonal lighting.\n\nOur clients are public and private construction, municipal and agricultural enterprises, wholesale companies, dealers and retail chains. For each client we tailor delivery terms, shipping schedules and payment formats.\n\nAll products are inspected, carry the required EAC conformity certificates and an official warranty."
+    },
+    "seoTitle": {
+      "ru": "О компании АЗБУТ — поставщик спецтехники и запчастей",
+      "en": "About AZBUT — supplier of machinery and spare parts"
+    },
+    "seoDescription": {
+      "ru": "Направления работы, география поставок, стандарты качества и реквизиты ООО «Азбут».",
+      "en": "Operations, delivery geography, quality standards and legal details of Azbut LLC."
+    }
+  },
+  "contacts": {
+    "title": {
+      "ru": "Контакты | АЗБУТ",
+      "en": "Contacts | AZBUT"
+    },
+    "description": {
+      "ru": "Свяжитесь с АЗБУТ: телефоны, email, адрес склада в Минске, мессенджеры и форма заявки на подбор оборудования.",
+      "en": "Contact AZBUT: phones, email, Minsk warehouse address, messengers and a request form."
+    },
+    "h1": {
+      "ru": "Контакты",
+      "en": "Contacts"
+    },
+    "body": {
+      "ru": "Оставьте заявку или свяжитесь с нами удобным способом — поможем подобрать запчасть, технику или решение для праздничного оформления.",
+      "en": "Leave a request or contact us in any convenient way — we will help you select a part, machinery or a holiday lighting solution."
+    },
+    "seoTitle": {
+      "ru": "Контакты АЗБУТ — Минск, ул. Будславская 29",
+      "en": "AZBUT contacts — Minsk, Budslawskaya 29"
+    },
+    "seoDescription": {
+      "ru": "Телефоны, email, Telegram, WhatsApp, Viber и адрес ООО «Азбут» в Минске. Форма заявки на подбор запчастей и иллюминации.",
+      "en": "Phones, email, Telegram, WhatsApp, Viber and the AZBUT office address in Minsk. Request form for spare parts and lighting."
+    }
+  },
+  "vacancies": {
+    "title": {
+      "ru": "Вакансии | АЗБУТ",
+      "en": "Careers | AZBUT"
+    },
+    "description": {
+      "ru": "Открытые вакансии ООО «Азбут»: снабжение, продажи B2B, логистика и светотехнические проекты.",
+      "en": "Open positions at Azbut LLC: procurement, B2B sales, logistics and lighting projects."
+    },
+    "h1": {
+      "ru": "Присоединяйтесь к команде АЗБУТ",
+      "en": "Join the AZBUT team"
+    },
+    "body": {
+      "ru": "Мы ищем специалистов, которые умеют разбираться в технике, любят точные сроки и умеют договариваться с заводами и клиентами. Если вы хотите работать в международных поставках — напишите нам.\n\nАктуальные направления: менеджер по закупкам, инженер-комплектовщик, менеджер B2B-продаж, специалист по ВЭД, проектировщик иллюминации.",
+      "en": "We look for people who understand machinery, respect deadlines and can negotiate with factories and clients. If you want to work in international supply, write to us.\n\nCurrent areas: procurement manager, parts engineer, B2B sales manager, foreign-trade specialist, lighting designer."
+    },
+    "seoTitle": {
+      "ru": "Вакансии АЗБУТ — работа в международных поставках",
+      "en": "AZBUT careers — international supply jobs"
+    },
+    "seoDescription": {
+      "ru": "Работа в ООО «Азбут»: закупки, ВЭД, B2B-продажи и проекты иллюминации в Минске.",
+      "en": "Careers at Azbut LLC: procurement, foreign trade, B2B sales and lighting projects in Minsk."
+    }
+  },
+  "terms": {
+    "title": {
+      "ru": "Пользовательское соглашение | АЗБУТ",
+      "en": "Terms and conditions | AZBUT"
+    },
+    "description": {
+      "ru": "Условия использования сайта azbut.by и обработка данных, отправленных через формы заявки.",
+      "en": "Terms of use of azbut.by and processing of data submitted through request forms."
+    },
+    "h1": {
+      "ru": "Пользовательское соглашение",
+      "en": "Terms and conditions"
+    },
+    "body": {
+      "ru": "Отправляя форму на сайте, вы соглашаетесь на обработку указанных контактных данных для связи по вашему запросу. Данные не передаются третьим лицам, кроме случаев, предусмотренных законодательством Республики Беларусь.\n\nМатериалы сайта носят информационный характер. Характеристики, наличие и цены уточняются менеджером при оформлении заказа.",
+      "en": "By submitting a form on this website you agree to the processing of the provided contact details in order to respond to your request. Data is not shared with third parties except as required by the law of the Republic of Belarus.\n\nWebsite materials are informational. Specifications, availability and prices are confirmed by a manager when an order is placed."
+    },
+    "seoTitle": {
+      "ru": "Пользовательское соглашение | АЗБУТ",
+      "en": "Terms and conditions | AZBUT"
+    },
+    "seoDescription": {
+      "ru": "Правила использования сайта и обработка персональных данных в формах заявки.",
+      "en": "Website terms and personal data processing in request forms."
+    }
+  }
+}

@@ -1,0 +1,188 @@
+[
+  {
+    "id": "srv-1",
+    "slug": "spare-parts",
+    "title": {
+      "ru": "Запчасти и комплектующие",
+      "en": "Spare parts and components"
+    },
+    "summary": {
+      "ru": "Подбор и поставка узлов, расходных материалов и запасных частей для любой спецтехники.",
+      "en": "Selection and supply of units, consumables and spare parts for any special machinery."
+    },
+    "body": {
+      "ru": "Работаем с отечественными и импортными производителями: подшипники, валы, редукторы, ремни, цепи, electrical components, гидравлика и расходники. Подберём аналог по артикулу, чертежу или образцу.",
+      "en": "We work with domestic and imported manufacturers: bearings, shafts, gearboxes, belts, chains, electrical components, hydraulics and consumables. We can find an equivalent by part number, drawing or sample."
+    },
+    "image": "/assets/img/product-6.webp",
+    "icon": "gear",
+    "order": 1,
+    "published": true,
+    "updatedAt": "2026-11-02T14:00:00.000Z",
+    "seo": {
+      "title": {
+        "ru": "Запчасти для спецтехники оптом | АЗБУТ",
+        "en": "Wholesale spare parts for machinery | AZBUT"
+      },
+      "description": {
+        "ru": "Подшипники, редукторы, цепи, ремни, гидравлика и расходные материалы для сельхоз-, строительной и коммунальной техники.",
+        "en": "Bearings, gearboxes, chains, belts, hydraulics and consumables for agricultural, construction and municipal machinery."
+      }
+    }
+  },
+  {
+    "id": "srv-2",
+    "slug": "special-machinery",
+    "title": {
+      "ru": "Спецтехника и навесное оборудование",
+      "en": "Special machinery and attachments"
+    },
+    "summary": {
+      "ru": "Прямые поставки тракторов, экскаваторов, прицепного и навесного оборудования.",
+      "en": "Direct supply of tractors, excavators, trailed and mounted equipment."
+    },
+    "body": {
+      "ru": "Подбираем технику под задачи сельского хозяйства, строительства, карьерных работ и коммунального сектора. Помогаем с комплектацией, доставкой и документами.",
+      "en": "We select machinery for agriculture, construction, quarry operations and municipal services. We help with configuration, delivery and documents."
+    },
+    "image": "/assets/img/hero-640.webp",
+    "icon": "tractor",
+    "order": 2,
+    "published": true,
+    "updatedAt": "2026-11-02T14:00:00.000Z",
+    "seo": {
+      "title": {
+        "ru": "Спецтехника и навесное оборудование | АЗБУТ",
+        "en": "Special machinery and attachments | AZBUT"
+      },
+      "description": {
+        "ru": "Поставка тракторов, экскаваторов и навесного оборудования для бизнеса.",
+        "en": "Supply of tractors, excavators and attachments for business."
+      }
+    }
+  },
+  {
+    "id": "srv-3",
+    "slug": "lighting",
+    "title": {
+      "ru": "Профессиональная иллюминация",
+      "en": "Professional lighting"
+    },
+    "summary": {
+      "ru": "Уличные гирлянды, световые конструкции и новогоднее оформление объектов.",
+      "en": "Outdoor garlands, light structures and holiday decoration of facilities."
+    },
+    "body": {
+      "ru": "Системы «бахрома», «дюралайт», «световой дождь», «нить» и «клип-лайт» с защитой IP65/IP67. Проектируем и комплектуем фасады, площади, парки и торговые центры.",
+      "en": "Fringe, duralight, light rain, string and clip-light systems with IP65/IP67 protection. We design and supply facades, squares, parks and shopping centers."
+    },
+    "image": "/assets/img/illumination.webp",
+    "icon": "bulb",
+    "order": 3,
+    "published": true,
+    "updatedAt": "2026-11-02T14:00:00.000Z",
+    "seo": {
+      "title": {
+        "ru": "Гирлянды и иллюминация оптом | АЗБУТ",
+        "en": "Wholesale garlands and lighting | AZBUT"
+      },
+      "description": {
+        "ru": "Профессиональные уличные гирлянды IP65, 3D-фигуры и световые конструкции для городов и бизнес-центров.",
+        "en": "Professional IP65 outdoor garlands, 3D figures and light structures for cities and business centers."
+      }
+    }
+  },
+  {
+    "id": "srv-4",
+    "slug": "ved",
+    "title": {
+      "ru": "ВЭД и логистика",
+      "en": "Foreign trade and logistics"
+    },
+    "summary": {
+      "ru": "Поиск товаров за рубежом, экспорт, биржевые сделки и документальное сопровождение.",
+      "en": "Sourcing abroad, exports, exchange trading and documentation support."
+    },
+    "body": {
+      "ru": "Находим нужные позиции вне страны, выстраиваем внешнеторговую логистику и помогаем продукции клиентов выходить на новые рынки. Аккредитованный брокер на Белорусской универсальной товарной бирже.",
+      "en": "We source items abroad, build foreign-trade logistics and help clients' products enter new markets. Accredited broker at the Belarusian Universal Commodity Exchange."
+    },
+    "image": "/assets/img/contact.webp",
+    "icon": "globe",
+    "order": 4,
+    "published": true,
+    "updatedAt": "2026-11-02T14:00:00.000Z",
+    "seo": {
+      "title": {
+        "ru": "ВЭД-сопровождение и логистика | АЗБУТ",
+        "en": "Foreign trade support and logistics | AZBUT"
+      },
+      "description": {
+        "ru": "Импорт, экспорт, поиск поставщиков и сопровождение сделок на БУТБ.",
+        "en": "Import, export, supplier search and exchange transaction support at BUCE."
+      }
+    }
+  },
+  {
+    "id": "srv-5",
+    "slug": "installation",
+    "title": {
+      "ru": "Монтаж иллюминации",
+      "en": "Lighting installation"
+    },
+    "summary": {
+      "ru": "Полный цикл: подбор, установка, подключение и запуск светового оборудования.",
+      "en": "Full cycle: selection, installation, connection and commissioning of lighting equipment."
+    },
+    "body": {
+      "ru": "Берём на себя монтаж фасадов, улиц, парков и ландшафтов: от проекта и сметы до финального запуска и проверки режимов.",
+      "en": "We handle installation for facades, streets, parks and landscapes: from design and estimate to final commissioning and mode checks."
+    },
+    "image": "/assets/img/light-figures.webp",
+    "icon": "tools",
+    "order": 5,
+    "published": true,
+    "updatedAt": "2026-11-02T14:00:00.000Z",
+    "seo": {
+      "title": {
+        "ru": "Монтаж иллюминации под ключ | АЗБУТ",
+        "en": "Turnkey lighting installation | AZBUT"
+      },
+      "description": {
+        "ru": "Установка и настройка уличных гирлянд, световых конструкций и праздничного декора.",
+        "en": "Installation and setup of outdoor garlands, light structures and holiday decor."
+      }
+    }
+  },
+  {
+    "id": "srv-6",
+    "slug": "earthworks",
+    "title": {
+      "ru": "Земляные работы мини-техникой",
+      "en": "Earthworks with compact machinery"
+    },
+    "summary": {
+      "ru": "Аккуратная работа на участках с ограниченным пространством.",
+      "en": "Careful work on sites with limited space."
+    },
+    "body": {
+      "ru": "Выемка грунта, планировка, рыхление, корчевание пней, демонтаж покрытий, бурение свай и обратная отсыпка фундамента.",
+      "en": "Excavation, grading, loosening, stump removal, pavement demolition, pile drilling and backfilling."
+    },
+    "image": "/assets/img/contact.webp",
+    "icon": "excavator",
+    "order": 6,
+    "published": true,
+    "updatedAt": "2026-11-02T14:00:00.000Z",
+    "seo": {
+      "title": {
+        "ru": "Земляные работы мини-техникой | АЗБУТ",
+        "en": "Earthworks with compact machinery | AZBUT"
+      },
+      "description": {
+        "ru": "Планировка участка, выемка грунта и бурение свай компактной техникой.",
+        "en": "Site grading, excavation and pile drilling with compact machinery."
+      }
+    }
+  }
+]

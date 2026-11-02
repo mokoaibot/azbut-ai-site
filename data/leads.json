@@ -1,0 +1,38 @@
+[
+  {
+    "id": "ld-1",
+    "createdAt": "2026-11-01T09:12:00.000Z",
+    "name": "Иван Петров",
+    "company": "АгроТехника",
+    "email": "ivan@example.by",
+    "phone": "+375 29 123 45 67",
+    "message": "Нужна звездочка AZ71882, 4 шт.",
+    "productId": "pr-02",
+    "status": "new",
+    "source": "/product/tsepnaya-zvezdochka-az71882"
+  },
+  {
+    "id": "ld-2",
+    "createdAt": "2026-10-30T14:40:00.000Z",
+    "name": "Мария Соколова",
+    "company": "ТЦ Галерея",
+    "email": "maria@example.by",
+    "phone": "+375 17 200 11 22",
+    "message": "Интересует новогоднее оформление фасада, площадь 600 м².",
+    "productId": null,
+    "status": "in_progress",
+    "source": "/services/lighting"
+  },
+  {
+    "id": "ld-3",
+    "createdAt": "2026-10-28T11:05:00.000Z",
+    "name": "ООО «СтройРесурс»",
+    "company": "СтройРесурс",
+    "email": "buy@example.by",
+    "phone": "+375 29 331 00 00",
+    "message": "Запрос прайса на подшипники и ремни.",
+    "productId": null,
+    "status": "done",
+    "source": "/contacts"
+  }
+]

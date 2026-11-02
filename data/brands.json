@@ -1,0 +1,90 @@
+[
+  {
+    "id": "br-1",
+    "slug": "john-deere",
+    "name": "JOHN DEERE",
+    "description": {
+      "ru": "Мировой лидер в производстве сельскохозяйственной и строительной техники.",
+      "en": "Global leader in agricultural and construction machinery."
+    },
+    "published": true,
+    "updatedAt": "2026-11-02T14:00:00.000Z"
+  },
+  {
+    "id": "br-2",
+    "slug": "claas",
+    "name": "CLAAS",
+    "description": {
+      "ru": "Немецкий производитель зерноуборочных и кормоуборочных комбайнов.",
+      "en": "German manufacturer of combine and forage harvesters."
+    },
+    "published": true,
+    "updatedAt": "2026-11-02T14:00:00.000Z"
+  },
+  {
+    "id": "br-3",
+    "slug": "cnh-industrial",
+    "name": "CNH Industrial",
+    "description": {
+      "ru": "Case IH, New Holland, Steyr и CASE Construction Equipment.",
+      "en": "Case IH, New Holland, Steyr and CASE Construction Equipment."
+    },
+    "published": true,
+    "updatedAt": "2026-11-02T14:00:00.000Z"
+  },
+  {
+    "id": "br-4",
+    "slug": "deutz",
+    "name": "DEUTZ AG",
+    "description": {
+      "ru": "Дизельные, газовые и электрические двигатели для спецтехники.",
+      "en": "Diesel, gas and electric engines for special machinery."
+    },
+    "published": true,
+    "updatedAt": "2026-11-02T14:00:00.000Z"
+  },
+  {
+    "id": "br-5",
+    "slug": "mtz",
+    "name": "МТЗ",
+    "description": {
+      "ru": "Минский тракторный завод, техника под брендом «Беларус».",
+      "en": "Minsk Tractor Works, machinery under the Belarus brand."
+    },
+    "published": true,
+    "updatedAt": "2026-11-02T14:00:00.000Z"
+  },
+  {
+    "id": "br-6",
+    "slug": "amkodor",
+    "name": "АМКАДОР",
+    "description": {
+      "ru": "Дорожно-строительная, коммунальная и лесная техника.",
+      "en": "Road-building, municipal and forestry machinery."
+    },
+    "published": true,
+    "updatedAt": "2026-11-02T14:00:00.000Z"
+  },
+  {
+    "id": "br-7",
+    "slug": "gomselmash",
+    "name": "GOMSELMASH",
+    "description": {
+      "ru": "Комбайны, косилки и картофелеуборочные машины.",
+      "en": "Harvesters, mowers and potato harvesters."
+    },
+    "published": true,
+    "updatedAt": "2026-11-02T14:00:00.000Z"
+  },
+  {
+    "id": "br-8",
+    "slug": "rostselmash",
+    "name": "Ростсельмаш",
+    "description": {
+      "ru": "Комбайны, тракторы и цифровые решения для агробизнеса.",
+      "en": "Harvesters, tractors and digital solutions for agribusiness."
+    },
+    "published": true,
+    "updatedAt": "2026-11-02T14:00:00.000Z"
+  }
+]

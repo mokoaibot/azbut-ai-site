@@ -1,0 +1,18 @@
+{
+  "name": "azbut-rebuild",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Полная переработка azbut.by: серверный рендеринг, адаптивная вёрстка, SEO и админка на чистом Node.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "reset": "node scripts/reset.js",
+    "check": "node scripts/check.js",
+    "build:static": "node scripts/build-static.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {},
+  "license": "UNLICENSED"
+}
