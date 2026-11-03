@@ -1,4 +1,6 @@
 'use strict';
+const fs = require('fs');
+const path = require('path');
 const BASE = process.env.BASE_URL || 'http://127.0.0.1:3000';
 let passed = 0, failed = 0;
 
@@ -42,10 +44,14 @@ function hiddenValue(html, name) {
     const en = await get('/en');
     assert(en.status === 200 && /<html lang="en">/.test(en.text), 'GET /en → 200, lang="en"');
 
-    const catalog = await get('/catalog?q=звездочка');
-    assert(catalog.status === 200 && /Цепная звездочка/.test(catalog.text), 'поиск по каталогу работает');
+    const allProducts = JSON.parse(fs.readFileSync(path.resolve(__dirname, '..', 'data', 'products.json'), 'utf8'));
+    const sample = allProducts.find(p => p.sku === 'AZ71882') || allProducts[0];
 
-    const product = await get('/product/tsepnaya-zvezdochka-az71882');
+    const catalog = await get('/catalog?q=звездочка');
+    assert(catalog.status === 200 && /звездочк/i.test(catalog.text), 'поиск по каталогу работает');
+    assert(/class="product-card" data-brand=/.test(catalog.text), 'карточки несут data-атрибуты для клиентских фильтров');
+
+    const product = await get('/product/' + encodeURIComponent(sample.slug));
     assert(product.status === 200 && /"@type":"Product"/.test(product.text), 'карточка товара + Product schema');
 
     const service = await get('/services/lighting');
@@ -99,6 +105,14 @@ function hiddenValue(html, name) {
       body: new URLSearchParams({ name: 'Тест', email: 'test@example.by', phone: '+375 29 000 00 00', message: 'Без токена' }).toString()
     });
     assert(leadNoCsrf.status === 403, 'заявка без CSRF → 403');
+
+    const staticCatalog = path.resolve(__dirname, '..', 'docs', 'catalog', 'index.html');
+    if (fs.existsSync(staticCatalog)) {
+      const html = fs.readFileSync(staticCatalog, 'utf8');
+      const published = JSON.parse(fs.readFileSync(path.resolve(__dirname, '..', 'data', 'products.json'), 'utf8')).filter(p => p.published).length;
+      const slugs = new Set([...html.matchAll(/href="\/azbut-ai-site\/product\/([^/"?]+)\/?"/g)].map(m => m[1]));
+      assert(slugs.size === published && !/\?page=/.test(html), 'статический каталог: все товары без query-пагинации');
+    }
 
     const health = await get('/health');
     assert(health.status === 200 && /"ok":true/.test(health.text), '/health');

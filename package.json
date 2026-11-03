@@ -8,7 +8,9 @@
     "dev": "node server.js",
     "reset": "node scripts/reset.js",
     "check": "node scripts/check.js",
-    "build:static": "node scripts/build-static.js"
+    "build:static": "node scripts/build-static.js",
+    "import:tilda": "python3 scripts/import-tilda.py",
+    "push:pages": "bash scripts/push-pages.sh"
   },
   "engines": {
     "node": ">=20"

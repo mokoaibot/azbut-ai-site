@@ -24,6 +24,13 @@ function copyDir(src, dst) {
     else fs.copyFileSync(s, d);
   }
 }
+function withDirSlash(url) {
+  const m = /^(https?:\/\/[^/]+)(\/[^?#]*)(\?.*)?$/.exec(url);
+  if (!m) return url;
+  let p = m[2];
+  if (!p.endsWith('/') && !/\.[a-z0-9]+$/i.test(p)) p += '/';
+  return m[1] + p + (m[3] || '');
+}
 function fixHtml(html) {
   let out = html.replaceAll('http://127.0.0.1:' + PORT, ORIGIN);
   // All local assets live under /assets/ -> move them under the repo subpath.
@@ -40,6 +47,10 @@ function fixHtml(html) {
     if (!pathPart.endsWith('/') && !/\.[a-z0-9]+$/i.test(pathPart)) pathPart += '/';
     return attr + '="' + pathPart + query + '"';
   });
+  // Absolute canonical / hreflang / og:url also need the directory slash.
+  out = out.replace(/(<link rel="canonical" href=")([^"]+)(")/g, (m, a, u, z) => a + withDirSlash(u) + z);
+  out = out.replace(/(<link rel="alternate" hreflang="[^"]+" href=")([^"]+)(")/g, (m, a, u, z) => a + withDirSlash(u) + z);
+  out = out.replace(/(<meta property="og:url" content=")([^"]+)(")/g, (m, a, u, z) => a + withDirSlash(u) + z);
   return out;
 }
 function outRel(p) {
@@ -78,7 +89,7 @@ async function main() {
   ensure(DOCS);
   const child = spawn(process.execPath, ['server.js'], {
     cwd: ROOT,
-    env: Object.assign({}, process.env, { PORT: String(PORT), HOST: '127.0.0.1', SITE_ORIGIN: ORIGIN }),
+    env: Object.assign({}, process.env, { PORT: String(PORT), HOST: '127.0.0.1', SITE_ORIGIN: ORIGIN, STATIC_BUILD: '1' }),
     stdio: ['ignore', 'pipe', 'pipe']
   });
   let serverLog = '';
@@ -128,6 +139,7 @@ async function main() {
   let count = 0;
   (function walk(d) { for (const e of fs.readdirSync(d, { withFileTypes: true })) { if (e.isDirectory()) walk(path.join(d, e.name)); else count++; } })(DOCS);
   console.log('[build:static] docs/ готов: ' + count + ' файлов, ' + paths.length + ' страниц (RU+EN)');
+  console.log('[build:static] каталог: все карточки в одном HTML + клиентские фильтры/пагинация');
   console.log('[build:static] URL: ' + PUBLIC_ORIGIN + '/');
 }
 

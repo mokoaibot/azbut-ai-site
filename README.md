@@ -45,9 +45,11 @@ node server.js
 Полезные команды:
 
 ```bash
-npm run reset          # вернуть данные к seed/
+npm run reset          # вернуть данные к seed/ (971 реальная позиция)
+npm run import:tilda   # переимпорт каталога azbut.by из Tilda Store API (нужен Pillow для фото)
 npm run build:static   # пересобрать статику docs/ для GitHub Pages
-npm run check   # smoke-тест всех маршрутов, SEO, логина, CSRF и формы заявки
+npm run push:pages     # запушить main с новым PAT из GH_TOKEN или /tmp/gh_token
+npm run check          # smoke-тест всех маршрутов, SEO, логина, CSRF и формы заявки
 ```
 
 ---
@@ -76,7 +78,7 @@ npm run check   # smoke-тест всех маршрутов, SEO, логина,
 ## Проверки и скриншоты
 
 ```bash
-npm run check   # 27/27: статусы, SEO, hreflang, JSON-LD, sitemap, robots, 404, логин, CSRF, лид, health
+npm run check   # 30/30: статусы, SEO, hreflang, JSON-LD, sitemap, robots, 404, логин, CSRF, лид, data-атрибуты, статический каталог, health
 ```
 
 В папке `preview/` лежат скриншоты и machine-readable метрики:
@@ -101,16 +103,17 @@ npm run check   # 27/27: статусы, SEO, hreflang, JSON-LD, sitemap, robots
 | Ветка / папка | `main` → `/docs` |
 | Опубликованный сайт | `https://mokoaibot.github.io/azbut-ai-site/` |
 
-Pages раздаёт **статический снимок** публичной части, сгенерированный из тех же данных и шаблонов. Готовый `docs/` уже запушен в `main`: включите Pages в **Settings → Pages → Build and deployment → Deploy from a branch → Branch `main`, folder `/docs` → Save**. Публикация обычно занимает 1–2 минуты.
+Pages раздаёт **статический снимок** публичной части, сгенерированный из тех же данных и шаблонов. Каталог на Pages содержит **все товары сразу**: поиск, фильтры, сортировка и пагинация выполняются в браузере (`public/assets/js/site.js`), поэтому query-страницы вида `?page=2` больше не нужны. Готовый `docs/` собирается локально; после пуша в `main` включите Pages в **Settings → Pages → Build and deployment → Deploy from a branch → Branch `main`, folder `/docs` → Save**. Публикация обычно занимает 1–2 минуты.
 
 ```bash
-npm run build:static   # пересобрать docs/ (52 страницы RU+EN, ассеты, sitemap, robots, 404)
+npm run import:tilda   # 971 позиция, 50 брендов, 338 локальных WebP (при первом импорте)
+npm run build:static   # пересобрать docs/ (1970 страниц RU+EN, ассеты, sitemap, robots, 404)
 git add docs && git commit -m "Update static build" && git push
 ```
 
 Скрипт `scripts/build-static.js` поднимает временный SSR-сервер с `SITE_ORIGIN=https://mokoaibot.github.io`, обходит все страницы и переписывает пути под базу `/azbut-ai-site`: ассеты, внутренние ссылки, `canonical`, `hreflang`, OG и JSON-LD. Добавляются `.nojekyll`, `404.html`, `sitemap.xml`, `robots.txt` и заглушка `/admin/`.
 
-Автодеплой через GitHub Actions — шаблон `scripts/pages-workflow.yml.example`. Чтобы запушить его как `.github/workflows/pages.yml`, токену нужен `workflow` scope, а для включения Pages через API — `Pages: write`. С текущим fine-grained PAT этих прав нет, поэтому используется ручной source из ветки; для статического сайта его достаточно.
+Автодеплой через GitHub Actions — шаблон `scripts/pages-workflow.yml.example`. Чтобы запушить его как `.github/workflows/pages.yml`, токену нужен `workflow` scope, а для включения Pages через API — `Pages: write`. Переданный ранее PAT удалён после пуша. Для нового пуша: `GH_TOKEN=... npm run push:pages` либо положите ключ в `/tmp/gh_token` (`chmod 600`) и запустите ту же команду — скрипт сам клонирует репозиторий, скопирует проект, закоммитит, запушит и удалит временный токен. Для автоматического включения Pages через API нужен токен с `Pages: write`; ручной source из ветки уже работает.
 
 **Важное ограничение:** GitHub Pages не умеет запускать Node.js. Поэтому на Pages:
 
@@ -118,7 +121,27 @@ git add docs && git commit -m "Update static build" && git push
 - **не работают** админка, REST API, запись в JSON, загрузка картинок и отправка заявок — в формах показывается аккуратное пояснение;
 - полный сайт с админкой нужно размещать на VPS / Render / Railway / Fly.io и т.п. (`npm start`).
 
+Поиск и фильтры каталога на Pages при этом работают — в отличие от серверных функций выше.
+
 Токены и `.env` в репозиторий не коммитятся: `.gitignore` исключает `data/audit.log`, бэкапы и загрузки. Переданный в чате PAT рекомендуется отозвать и выпустить заново с минимальными правами.
+
+## Реальный каталог azbut.by
+
+`scripts/import-tilda.py` тянет публичный Tilda Store API (`storepartuid=686800396042`), который отдаёт **971 позицию** двумя слайсами по 500/471. Результат:
+
+| | |
+|---|---|
+| Товаров | 971 (все `published`) |
+| Брендов | 50 (включая 8 исходных с описаниями) |
+| Разделов | 6: Быстрая доставка 429, John Deere 263, CLAAS 252, CNH Industrial 20, DEUTZ AG 6, Разное 1 |
+| Фото | 338 уникальных изображений → локальные WebP 700 px / q72, 13.5 МБ; у 220 товаров есть фото, у 751 — `placeholder.svg` |
+| Цены | у всех `null`: в источнике реальных цен нет, поэтому schema.org `Offer` не выпускается |
+
+Скрипт сам скачивает фото (нужен `Pillow`), приводит `gallery`/`editions`/`partuids` из строк Tilda к нормальным структурам, вычищает HTML из описаний, берёт slug из `/tproduct/...` и пишет одинаковые `data/products.json` + `seed/products.json`. Сырой ответ сохранён в `/home/user/azbut_audit/tilda_products_raw.json`; флаги `--offline`, `--skip-images`, `--limit N` удобны для повторных прогонов.
+
+**Оговорки о качестве исходных данных:** названия и описания только на русском, поэтому EN-страницы оставляют оригинальную формулировку поставщика, а не выдумывают перевод; часть значений в поле «Бренд» — это нарицательные слова (`МЕТИЗЫ`, `ЦЕПИ`, `ПОДШИПНИК`); наличия и цен в API нет, поэтому все карточки честно показывают «Цена по запросу» / «Под заказ».
+
+Для масштаба добавлены: кэш `store.read()` по `mtime`, полный список категорий в фильтре (`allProducts`), компактная пагинация «← 1 2 3 … 122 →» на сервере и в статике, динамический slug в `scripts/check.js`.
 
 ---
 

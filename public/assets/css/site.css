@@ -170,6 +170,8 @@ ul,ol{margin:0;padding-left:1.2em}
 .form-status.is-ok{color:#8ce0b0}
 .form-status.is-error{color:#ffb3b3}
 .form-status.is-info{color:var(--accent-2)}
+.catalog-static-note{margin:-10px 0 20px}
+.product-card[hidden],.product-grid[hidden],.empty-state[hidden],.pagination[hidden]{display:none}
 .section--dark .form-status.is-info{color:var(--accent)}
 .section:not(.section--dark) .lead-form .checkbox{color:var(--muted)}
 .section:not(.section--dark) .lead-form .checkbox a{color:var(--accent-2)}
@@ -195,6 +197,7 @@ ul,ol{margin:0;padding-left:1.2em}
 .pagination ol{display:flex;gap:6px;list-style:none;padding:0;flex-wrap:wrap}
 .pagination a{display:grid;place-items:center;min-width:42px;min-height:42px;padding:6px 10px;border:1px solid var(--line);border-radius:8px;font-weight:700}
 .pagination a:hover,.pagination a.is-active{background:var(--accent);border-color:var(--accent);color:#2a200d}
+.pagination li span{display:grid;place-items:center;min-width:42px;min-height:42px;color:var(--muted)}
 .empty-state{text-align:center;padding:60px 20px;background:var(--bg);border-radius:var(--radius)}
 .empty-state p{color:var(--muted);font-size:1.05rem}
 /* Product */

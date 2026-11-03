@@ -1,14 +1,58 @@
 [
   {
-    "id": "br-1",
-    "slug": "john-deere",
-    "name": "JOHN DEERE",
+    "id": "br-tilda-ee545735",
+    "slug": "afa",
+    "name": "AFA",
     "description": {
-      "ru": "Мировой лидер в производстве сельскохозяйственной и строительной техники.",
-      "en": "Global leader in agricultural and construction machinery."
+      "ru": "Запчасти и комплектующие AFA: подбор по артикулу, поставка под заказ.",
+      "en": "AFA spare parts: sourcing by part number, supplied on request."
     },
     "published": true,
-    "updatedAt": "2026-11-02T14:00:00.000Z"
+    "updatedAt": "2026-11-03T13:40:53.458Z"
+  },
+  {
+    "id": "br-tilda-e7a49062",
+    "slug": "agco",
+    "name": "AGCO",
+    "description": {
+      "ru": "Запчасти и комплектующие AGCO: подбор по артикулу, поставка под заказ.",
+      "en": "AGCO spare parts: sourcing by part number, supplied on request."
+    },
+    "published": true,
+    "updatedAt": "2026-11-03T13:39:50.649Z"
+  },
+  {
+    "id": "br-tilda-05163faa",
+    "slug": "amazone",
+    "name": "AMAZONE",
+    "description": {
+      "ru": "Запчасти и комплектующие AMAZONE: подбор по артикулу, поставка под заказ.",
+      "en": "AMAZONE spare parts: sourcing by part number, supplied on request."
+    },
+    "published": true,
+    "updatedAt": "2026-11-03T13:40:53.458Z"
+  },
+  {
+    "id": "br-tilda-0af45053",
+    "slug": "anker",
+    "name": "ANKER",
+    "description": {
+      "ru": "Запчасти и комплектующие ANKER: подбор по артикулу, поставка под заказ.",
+      "en": "ANKER spare parts: sourcing by part number, supplied on request."
+    },
+    "published": true,
+    "updatedAt": "2026-11-03T13:39:50.649Z"
+  },
+  {
+    "id": "br-tilda-15bc60cd",
+    "slug": "ardecoled",
+    "name": "Ardecoled",
+    "description": {
+      "ru": "Запчасти и комплектующие Ardecoled: подбор по артикулу, поставка под заказ.",
+      "en": "Ardecoled spare parts: sourcing by part number, supplied on request."
+    },
+    "published": true,
+    "updatedAt": "2026-11-03T13:40:53.458Z"
   },
   {
     "id": "br-2",
@@ -22,6 +66,17 @@
     "updatedAt": "2026-11-02T14:00:00.000Z"
   },
   {
+    "id": "br-tilda-82d5d817",
+    "slug": "cnh",
+    "name": "CNH",
+    "description": {
+      "ru": "Запчасти и комплектующие CNH: подбор по артикулу, поставка под заказ.",
+      "en": "CNH spare parts: sourcing by part number, supplied on request."
+    },
+    "published": true,
+    "updatedAt": "2026-11-03T13:39:50.649Z"
+  },
+  {
     "id": "br-3",
     "slug": "cnh-industrial",
     "name": "CNH Industrial",
@@ -31,6 +86,50 @@
     },
     "published": true,
     "updatedAt": "2026-11-02T14:00:00.000Z"
+  },
+  {
+    "id": "br-tilda-c9ad62ed",
+    "slug": "danfoss",
+    "name": "Danfoss",
+    "description": {
+      "ru": "Запчасти и комплектующие Danfoss: подбор по артикулу, поставка под заказ.",
+      "en": "Danfoss spare parts: sourcing by part number, supplied on request."
+    },
+    "published": true,
+    "updatedAt": "2026-11-03T13:40:53.458Z"
+  },
+  {
+    "id": "br-tilda-26407c04",
+    "slug": "detroit",
+    "name": "DETROIT",
+    "description": {
+      "ru": "Запчасти и комплектующие DETROIT: подбор по артикулу, поставка под заказ.",
+      "en": "DETROIT spare parts: sourcing by part number, supplied on request."
+    },
+    "published": true,
+    "updatedAt": "2026-11-03T13:40:53.458Z"
+  },
+  {
+    "id": "br-tilda-9f4989fd",
+    "slug": "detroit-diesel",
+    "name": "DETROIT DIESEL",
+    "description": {
+      "ru": "Запчасти и комплектующие DETROIT DIESEL: подбор по артикулу, поставка под заказ.",
+      "en": "DETROIT DIESEL spare parts: sourcing by part number, supplied on request."
+    },
+    "published": true,
+    "updatedAt": "2026-11-03T13:39:50.649Z"
+  },
+  {
+    "id": "br-tilda-54bcdae3",
+    "slug": "deutz",
+    "name": "DEUTZ",
+    "description": {
+      "ru": "Запчасти и комплектующие DEUTZ: подбор по артикулу, поставка под заказ.",
+      "en": "DEUTZ spare parts: sourcing by part number, supplied on request."
+    },
+    "published": true,
+    "updatedAt": "2026-11-03T13:39:50.649Z"
   },
   {
     "id": "br-4",
@@ -44,26 +143,15 @@
     "updatedAt": "2026-11-02T14:00:00.000Z"
   },
   {
-    "id": "br-5",
-    "slug": "mtz",
-    "name": "МТЗ",
+    "id": "br-tilda-d3eb84e7",
+    "slug": "geringhoff",
+    "name": "GERINGHOFF",
     "description": {
-      "ru": "Минский тракторный завод, техника под брендом «Беларус».",
-      "en": "Minsk Tractor Works, machinery under the Belarus brand."
+      "ru": "Запчасти и комплектующие GERINGHOFF: подбор по артикулу, поставка под заказ.",
+      "en": "GERINGHOFF spare parts: sourcing by part number, supplied on request."
     },
     "published": true,
-    "updatedAt": "2026-11-02T14:00:00.000Z"
-  },
-  {
-    "id": "br-6",
-    "slug": "amkodor",
-    "name": "АМКАДОР",
-    "description": {
-      "ru": "Дорожно-строительная, коммунальная и лесная техника.",
-      "en": "Road-building, municipal and forestry machinery."
-    },
-    "published": true,
-    "updatedAt": "2026-11-02T14:00:00.000Z"
+    "updatedAt": "2026-11-03T13:40:53.458Z"
   },
   {
     "id": "br-7",
@@ -77,6 +165,314 @@
     "updatedAt": "2026-11-02T14:00:00.000Z"
   },
   {
+    "id": "br-tilda-4780ade7",
+    "slug": "hc-cargo",
+    "name": "HC-CARGO",
+    "description": {
+      "ru": "Запчасти и комплектующие HC-CARGO: подбор по артикулу, поставка под заказ.",
+      "en": "HC-CARGO spare parts: sourcing by part number, supplied on request."
+    },
+    "published": true,
+    "updatedAt": "2026-11-03T13:39:50.649Z"
+  },
+  {
+    "id": "br-tilda-f5c08ae3",
+    "slug": "horsch",
+    "name": "HORSCH",
+    "description": {
+      "ru": "Запчасти и комплектующие HORSCH: подбор по артикулу, поставка под заказ.",
+      "en": "HORSCH spare parts: sourcing by part number, supplied on request."
+    },
+    "published": true,
+    "updatedAt": "2026-11-03T13:40:53.458Z"
+  },
+  {
+    "id": "br-1",
+    "slug": "john-deere",
+    "name": "JOHN DEERE",
+    "description": {
+      "ru": "Мировой лидер в производстве сельскохозяйственной и строительной техники.",
+      "en": "Global leader in agricultural and construction machinery."
+    },
+    "published": true,
+    "updatedAt": "2026-11-02T14:00:00.000Z"
+  },
+  {
+    "id": "br-tilda-88514a1d",
+    "slug": "kuhn",
+    "name": "KUHN",
+    "description": {
+      "ru": "Запчасти и комплектующие KUHN: подбор по артикулу, поставка под заказ.",
+      "en": "KUHN spare parts: sourcing by part number, supplied on request."
+    },
+    "published": true,
+    "updatedAt": "2026-11-03T13:40:53.458Z"
+  },
+  {
+    "id": "br-tilda-97070f48",
+    "slug": "kverneland",
+    "name": "KVERNELAND",
+    "description": {
+      "ru": "Запчасти и комплектующие KVERNELAND: подбор по артикулу, поставка под заказ.",
+      "en": "KVERNELAND spare parts: sourcing by part number, supplied on request."
+    },
+    "published": true,
+    "updatedAt": "2026-11-03T13:39:50.649Z"
+  },
+  {
+    "id": "br-tilda-f04098dc",
+    "slug": "lemken",
+    "name": "LEMKEN",
+    "description": {
+      "ru": "Запчасти и комплектующие LEMKEN: подбор по артикулу, поставка под заказ.",
+      "en": "LEMKEN spare parts: sourcing by part number, supplied on request."
+    },
+    "published": true,
+    "updatedAt": "2026-11-03T13:39:50.649Z"
+  },
+  {
+    "id": "br-tilda-0206e785",
+    "slug": "ntn",
+    "name": "NTN",
+    "description": {
+      "ru": "Запчасти и комплектующие NTN: подбор по артикулу, поставка под заказ.",
+      "en": "NTN spare parts: sourcing by part number, supplied on request."
+    },
+    "published": true,
+    "updatedAt": "2026-11-03T13:40:53.458Z"
+  },
+  {
+    "id": "br-tilda-bf44b5f4",
+    "slug": "pepperl-fuchs",
+    "name": "Pepperl+Fuchs",
+    "description": {
+      "ru": "Запчасти и комплектующие Pepperl+Fuchs: подбор по артикулу, поставка под заказ.",
+      "en": "Pepperl+Fuchs spare parts: sourcing by part number, supplied on request."
+    },
+    "published": true,
+    "updatedAt": "2026-11-03T13:40:53.458Z"
+  },
+  {
+    "id": "br-tilda-643d7209",
+    "slug": "turbo",
+    "name": "TURBO",
+    "description": {
+      "ru": "Запчасти и комплектующие TURBO: подбор по артикулу, поставка под заказ.",
+      "en": "TURBO spare parts: sourcing by part number, supplied on request."
+    },
+    "published": true,
+    "updatedAt": "2026-11-03T13:40:53.458Z"
+  },
+  {
+    "id": "br-tilda-3a04c191",
+    "slug": "volvo",
+    "name": "VOLVO",
+    "description": {
+      "ru": "Запчасти и комплектующие VOLVO: подбор по артикулу, поставка под заказ.",
+      "en": "VOLVO spare parts: sourcing by part number, supplied on request."
+    },
+    "published": true,
+    "updatedAt": "2026-11-03T13:40:53.458Z"
+  },
+  {
+    "id": "br-tilda-6923dbf9",
+    "slug": "avto",
+    "name": "АВТО",
+    "description": {
+      "ru": "Запчасти и комплектующие АВТО: подбор по артикулу, поставка под заказ.",
+      "en": "АВТО spare parts: sourcing by part number, supplied on request."
+    },
+    "published": true,
+    "updatedAt": "2026-11-03T13:40:53.458Z"
+  },
+  {
+    "id": "br-6",
+    "slug": "amkodor",
+    "name": "АМКАДОР",
+    "description": {
+      "ru": "Дорожно-строительная, коммунальная и лесная техника.",
+      "en": "Road-building, municipal and forestry machinery."
+    },
+    "published": true,
+    "updatedAt": "2026-11-02T14:00:00.000Z"
+  },
+  {
+    "id": "br-tilda-016e08e2",
+    "slug": "bez-brenda",
+    "name": "Без бренда",
+    "description": {
+      "ru": "Запчасти и комплектующие Без бренда: подбор по артикулу, поставка под заказ.",
+      "en": "Без бренда spare parts: sourcing by part number, supplied on request."
+    },
+    "published": true,
+    "updatedAt": "2026-11-03T13:39:50.649Z"
+  },
+  {
+    "id": "br-tilda-e443f511",
+    "slug": "gomselmash",
+    "name": "ГОМСЕЛЬМАШ",
+    "description": {
+      "ru": "Запчасти и комплектующие ГОМСЕЛЬМАШ: подбор по артикулу, поставка под заказ.",
+      "en": "ГОМСЕЛЬМАШ spare parts: sourcing by part number, supplied on request."
+    },
+    "published": true,
+    "updatedAt": "2026-11-03T13:40:53.458Z"
+  },
+  {
+    "id": "br-tilda-31e2413d",
+    "slug": "gruzoviki",
+    "name": "ГРУЗОВИКИ",
+    "description": {
+      "ru": "Запчасти и комплектующие ГРУЗОВИКИ: подбор по артикулу, поставка под заказ.",
+      "en": "ГРУЗОВИКИ spare parts: sourcing by part number, supplied on request."
+    },
+    "published": true,
+    "updatedAt": "2026-11-03T13:40:53.458Z"
+  },
+  {
+    "id": "br-tilda-e9c92bbc",
+    "slug": "dvigateli",
+    "name": "ДВИГАТЕЛИ",
+    "description": {
+      "ru": "Запчасти и комплектующие ДВИГАТЕЛИ: подбор по артикулу, поставка под заказ.",
+      "en": "ДВИГАТЕЛИ spare parts: sourcing by part number, supplied on request."
+    },
+    "published": true,
+    "updatedAt": "2026-11-03T13:40:53.458Z"
+  },
+  {
+    "id": "br-tilda-33ed7159",
+    "slug": "instrument",
+    "name": "ИНСТРУМЕНТ",
+    "description": {
+      "ru": "Запчасти и комплектующие ИНСТРУМЕНТ: подбор по артикулу, поставка под заказ.",
+      "en": "ИНСТРУМЕНТ spare parts: sourcing by part number, supplied on request."
+    },
+    "published": true,
+    "updatedAt": "2026-11-03T13:40:53.458Z"
+  },
+  {
+    "id": "br-tilda-199956e3",
+    "slug": "kvk-800",
+    "name": "КВК-800",
+    "description": {
+      "ru": "Запчасти и комплектующие КВК-800: подбор по артикулу, поставка под заказ.",
+      "en": "КВК-800 spare parts: sourcing by part number, supplied on request."
+    },
+    "published": true,
+    "updatedAt": "2026-11-03T13:40:53.458Z"
+  },
+  {
+    "id": "br-tilda-47c96d0a",
+    "slug": "kzr",
+    "name": "КЗР",
+    "description": {
+      "ru": "Запчасти и комплектующие КЗР: подбор по артикулу, поставка под заказ.",
+      "en": "КЗР spare parts: sourcing by part number, supplied on request."
+    },
+    "published": true,
+    "updatedAt": "2026-11-03T13:40:53.458Z"
+  },
+  {
+    "id": "br-tilda-b7aeb867",
+    "slug": "kzs-1218",
+    "name": "КЗС 1218",
+    "description": {
+      "ru": "Запчасти и комплектующие КЗС 1218: подбор по артикулу, поставка под заказ.",
+      "en": "КЗС 1218 spare parts: sourcing by part number, supplied on request."
+    },
+    "published": true,
+    "updatedAt": "2026-11-03T13:40:53.458Z"
+  },
+  {
+    "id": "br-tilda-954cc1aa",
+    "slug": "kirovec",
+    "name": "КИРОВЕЦ",
+    "description": {
+      "ru": "Запчасти и комплектующие КИРОВЕЦ: подбор по артикулу, поставка под заказ.",
+      "en": "КИРОВЕЦ spare parts: sourcing by part number, supplied on request."
+    },
+    "published": true,
+    "updatedAt": "2026-11-03T13:40:53.458Z"
+  },
+  {
+    "id": "br-tilda-c666648d",
+    "slug": "kolca",
+    "name": "КОЛЬЦА",
+    "description": {
+      "ru": "Запчасти и комплектующие КОЛЬЦА: подбор по артикулу, поставка под заказ.",
+      "en": "КОЛЬЦА spare parts: sourcing by part number, supplied on request."
+    },
+    "published": true,
+    "updatedAt": "2026-11-03T13:40:53.458Z"
+  },
+  {
+    "id": "br-tilda-412cd471",
+    "slug": "kombayny",
+    "name": "КОМБАЙНЫ",
+    "description": {
+      "ru": "Запчасти и комплектующие КОМБАЙНЫ: подбор по артикулу, поставка под заказ.",
+      "en": "КОМБАЙНЫ spare parts: sourcing by part number, supplied on request."
+    },
+    "published": true,
+    "updatedAt": "2026-11-03T13:40:53.458Z"
+  },
+  {
+    "id": "br-tilda-f3141389",
+    "slug": "manzheta",
+    "name": "МАНЖЕТА",
+    "description": {
+      "ru": "Запчасти и комплектующие МАНЖЕТА: подбор по артикулу, поставка под заказ.",
+      "en": "МАНЖЕТА spare parts: sourcing by part number, supplied on request."
+    },
+    "published": true,
+    "updatedAt": "2026-11-03T13:40:53.458Z"
+  },
+  {
+    "id": "br-tilda-70613f68",
+    "slug": "metizy",
+    "name": "МЕТИЗЫ",
+    "description": {
+      "ru": "Запчасти и комплектующие МЕТИЗЫ: подбор по артикулу, поставка под заказ.",
+      "en": "МЕТИЗЫ spare parts: sourcing by part number, supplied on request."
+    },
+    "published": true,
+    "updatedAt": "2026-11-03T13:40:53.458Z"
+  },
+  {
+    "id": "br-5",
+    "slug": "mtz",
+    "name": "МТЗ",
+    "description": {
+      "ru": "Минский тракторный завод, техника под брендом «Беларус».",
+      "en": "Minsk Tractor Works, machinery under the Belarus brand."
+    },
+    "published": true,
+    "updatedAt": "2026-11-02T14:00:00.000Z"
+  },
+  {
+    "id": "br-tilda-3c125c39",
+    "slug": "podshipnik",
+    "name": "ПОДШИПНИК",
+    "description": {
+      "ru": "Запчасти и комплектующие ПОДШИПНИК: подбор по артикулу, поставка под заказ.",
+      "en": "ПОДШИПНИК spare parts: sourcing by part number, supplied on request."
+    },
+    "published": true,
+    "updatedAt": "2026-11-03T13:40:53.458Z"
+  },
+  {
+    "id": "br-tilda-b9117199",
+    "slug": "rvd",
+    "name": "РВД",
+    "description": {
+      "ru": "Запчасти и комплектующие РВД: подбор по артикулу, поставка под заказ.",
+      "en": "РВД spare parts: sourcing by part number, supplied on request."
+    },
+    "published": true,
+    "updatedAt": "2026-11-03T13:40:53.458Z"
+  },
+  {
     "id": "br-8",
     "slug": "rostselmash",
     "name": "Ростсельмаш",
@@ -86,5 +482,71 @@
     },
     "published": true,
     "updatedAt": "2026-11-02T14:00:00.000Z"
+  },
+  {
+    "id": "br-tilda-4e854728",
+    "slug": "salniki",
+    "name": "САЛЬНИКИ",
+    "description": {
+      "ru": "Запчасти и комплектующие САЛЬНИКИ: подбор по артикулу, поставка под заказ.",
+      "en": "САЛЬНИКИ spare parts: sourcing by part number, supplied on request."
+    },
+    "published": true,
+    "updatedAt": "2026-11-03T13:40:53.458Z"
+  },
+  {
+    "id": "br-tilda-bf3afb1e",
+    "slug": "smazka",
+    "name": "СМАЗКА",
+    "description": {
+      "ru": "Запчасти и комплектующие СМАЗКА: подбор по артикулу, поставка под заказ.",
+      "en": "СМАЗКА spare parts: sourcing by part number, supplied on request."
+    },
+    "published": true,
+    "updatedAt": "2026-11-03T13:40:53.458Z"
+  },
+  {
+    "id": "br-tilda-450dc35e",
+    "slug": "stopornye-kolca",
+    "name": "СТОПОРНЫЕ КОЛЬЦА",
+    "description": {
+      "ru": "Запчасти и комплектующие СТОПОРНЫЕ КОЛЬЦА: подбор по артикулу, поставка под заказ.",
+      "en": "СТОПОРНЫЕ КОЛЬЦА spare parts: sourcing by part number, supplied on request."
+    },
+    "published": true,
+    "updatedAt": "2026-11-03T13:40:53.458Z"
+  },
+  {
+    "id": "br-tilda-eb1c4097",
+    "slug": "uaz",
+    "name": "УАЗ",
+    "description": {
+      "ru": "Запчасти и комплектующие УАЗ: подбор по артикулу, поставка под заказ.",
+      "en": "УАЗ spare parts: sourcing by part number, supplied on request."
+    },
+    "published": true,
+    "updatedAt": "2026-11-03T13:40:53.458Z"
+  },
+  {
+    "id": "br-tilda-7a2459fb",
+    "slug": "hz",
+    "name": "ХЗ",
+    "description": {
+      "ru": "Запчасти и комплектующие ХЗ: подбор по артикулу, поставка под заказ.",
+      "en": "ХЗ spare parts: sourcing by part number, supplied on request."
+    },
+    "published": true,
+    "updatedAt": "2026-11-03T13:40:53.458Z"
+  },
+  {
+    "id": "br-tilda-7fa2e625",
+    "slug": "cepi",
+    "name": "ЦЕПИ",
+    "description": {
+      "ru": "Запчасти и комплектующие ЦЕПИ: подбор по артикулу, поставка под заказ.",
+      "en": "ЦЕПИ spare parts: sourcing by part number, supplied on request."
+    },
+    "published": true,
+    "updatedAt": "2026-11-03T13:40:53.458Z"
   }
 ]

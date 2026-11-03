@@ -80,7 +80,9 @@ function homeRoute(req, res, lang, search) {
 }
 
 function catalogRoute(req, res, lang, search, params) {
-  const size = 8;
+  // Static Pages build renders every card in one HTML: filtering/pagination is
+  // then handled by site.js in the browser, without query-string round trips.
+  const size = process.env.STATIC_BUILD === '1' ? 100000 : 8;
   const filters = {
     q: V.cleanText(params.get('q'), 120),
     brand: V.cleanText(params.get('brand'), 80),
@@ -110,7 +112,7 @@ function catalogRoute(req, res, lang, search, params) {
   respondPage(req, res, {
     lang, basePath: '/catalog', query: search,
     title: L.title, description: L.description,
-    body: c => views.catalog(Object.assign({}, c, { products: slice, filters, total, page, pages, csrfToken: c.csrfToken })),
+    body: c => views.catalog(Object.assign({}, c, { products: slice, allProducts: c.products, filters, total, page, pages, csrfToken: c.csrfToken })),
     structuredData: c => baseSchemas(c).concat([
       crumbSchema(c, [{ label: lang === 'en' ? 'Home' : 'Главная', href: LANG_PREFIX[lang] || '/' }, { label: lang === 'en' ? 'Catalog' : 'Каталог' }]),
       R.itemListSchema(slice, lang, c.origin, '/catalog')
