@@ -92,7 +92,7 @@ git add -A
 if git diff --cached --quiet; then
   echo '[push] Изменений нет — удалённый main уже актуален.'
 else
-  git commit -q -m 'fix: smooth section switching and 5-column dense catalog'
+  git commit -q -m 'fix: remove duplicate catalog headings and align title left'
 fi
 
 echo "[push] Отправляю main..."

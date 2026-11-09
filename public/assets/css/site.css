@@ -306,10 +306,10 @@ ul,ol{margin:0;padding-left:1.2em}
 .catalog-actions{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
 .catalog-actions .btn{flex:1;min-height:40px;padding:8px 12px;font-size:.85rem}
 .catalog-main{min-width:0}
-.catalog-crumbs .breadcrumbs{margin-bottom:10px;font-size:.78rem}
-.catalog-head .eyebrow{margin-bottom:6px}
-.catalog-head h1{margin:0 0 8px;font-size:clamp(2rem,4vw,3.2rem)}
-.catalog-sub{margin:0 0 22px;color:var(--muted);font-size:.95rem;min-height:1.6em}
+.catalog-head{margin:0 0 22px}
+.catalog-crumbs .breadcrumbs{margin-bottom:8px;font-size:.78rem}
+.catalog-head h1{margin:0 0 6px;font-size:clamp(1.8rem,3vw,2.5rem)}
+.catalog-sub{margin:0;color:var(--muted);font-size:.95rem;min-height:1.6em}
 .catalog-sub b{color:var(--ink);font-weight:750}
 .catalog-range{font-size:.85rem;white-space:nowrap}
 .catalog-range::before{content:' · '}
@@ -337,14 +337,15 @@ ul,ol{margin:0;padding-left:1.2em}
  .catalog-cats{display:none}
  .catalog-select{display:block;margin-bottom:10px}
  .catalog-extra{margin-top:10px}
- .catalog-head h1{font-size:2rem;line-height:1.15}
- .catalog-sub{margin-bottom:16px}
+ .catalog-head h1{font-size:1.9rem;line-height:1.15}
+ .catalog-head{margin-bottom:16px}
  .catalog-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
  .catalog-card__img{height:200px}
 }
 @media(max-width:640px){
  .catalog-wrap .container{width:min(100% - 28px,1600px)}
  .catalog-wrap{padding-top:18px}
+ .catalog-head h1{font-size:1.6rem}
  .catalog-grid{grid-template-columns:1fr;gap:14px}
  .catalog-card__img{height:190px}
  .catalog-card__name{font-size:.95rem}

@@ -219,7 +219,7 @@ window.__AZBUT_STATIC__=true;
         var start = (state.page - 1) * size;
         var end = Math.min(start + size, list.length);
         if (rangeEl) rangeEl.textContent = list.length
-          ? (lang === 'en' ? 'showing ' : 'показано ') + (start + 1) + '–' + end + (lang === 'en' ? ' of ' : ' из ') + list.length
+          ? (lang === 'en' ? 'showing ' : 'показано ') + (start + 1) + '–' + end
           : '';
         cards.forEach(function (card) { card.hidden = true; });
         list.forEach(function (card) { grid.appendChild(card); });

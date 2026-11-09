@@ -51,7 +51,10 @@ function hiddenValue(html, name) {
     assert(catalog.status === 200 && /звездочк/i.test(catalog.text), 'поиск по каталогу работает');
     assert(/class="product-card catalog-card"[^>]*data-brand=/.test(catalog.text), 'карточки несут data-атрибуты для клиентских фильтров');
     assert(/class="catalog-side"/.test(catalog.text) && /catalog-cat/.test(catalog.text), 'каталог: боковая колонка с разделами как у образца');
-    assert(/id="catalog-range"/.test(catalog.text), 'каталог: счётчик «показано N–M из K»');
+    assert(/id="catalog-range"/.test(catalog.text), 'каталог: счётчик диапазона «показано N–M»');
+    assert(!/Каталог АЗБУТ/.test(catalog.text) && !/<p class="eyebrow">Каталог<\/p>/.test(catalog.text), 'каталог: дубли «Каталог» в eyebrow и H1 удалены');
+    assert(/<h1>Запчасти и комплектующие<\/h1>/.test(catalog.text), 'каталог: один содержательный H1 без самоповтора');
+    assert(catalog.text.indexOf('class="catalog-head"') < catalog.text.indexOf('class="catalog-layout"') && catalog.text.indexOf('class="catalog-head"') > 0, 'каталог: заголовок вынесен влево над двухколоночной сеткой');
     const css = fs.readFileSync(path.resolve(__dirname, '..', 'public', 'assets', 'css', 'site.css'), 'utf8');
     assert(/repeat\(5,minmax\(0,1fr\)\)/.test(css), 'каталог: 5 карточек в ряду на широком экране');
     const clientJs = fs.readFileSync(path.resolve(__dirname, '..', 'public', 'assets', 'js', 'site.js'), 'utf8');

@@ -2,8 +2,8 @@
   {
     "id": "usr-1",
     "username": "admin",
-    "passwordHash": "e7710d9e59399aa2a3e3fd2a87eaff84:fe413ef7b5c3cfe1c87fe37e2adcc775ecd44417e51642ad2afbaa4b815dccb9282efeb384d5c3f6f7568dd642f782945fb1d570c1625a6c9cc048ab25cb271d",
+    "passwordHash": "426c44455d070afaf354e2080990b517:8ce9cb5208b098725088800110f6939fd0df3f3c55929510b8690c41c9e8f4f77ee1b0f03fc09a7dafdf8a4cbed78b80b44021f7ede7268f6b7f9c0c7d5a75f0",
     "role": "admin",
-    "createdAt": "2026-11-09T13:10:28.612Z"
+    "createdAt": "2026-11-09T14:36:02.206Z"
   }
 ]
