@@ -66,16 +66,21 @@ window.__AZBUT_STATIC__=true;
     });
   });
 
-  // --- GitHub Pages: client-side catalog (BIKAI-like sidebar + grid) ---
+  // --- GitHub Pages: client-side catalog (BIKAI-like sidebar + dense grid) ---
   if (STATIC) {
     var grid = document.querySelector('.catalog-grid');
     var filtersForm = document.querySelector('.catalog-filters');
     if (grid && filtersForm) {
       var cards = Array.prototype.slice.call(grid.querySelectorAll('.catalog-card'));
       var meta = document.querySelector('#catalog-count');
+      var rangeEl = document.querySelector('#catalog-range');
       var titleEl = document.querySelector('#catalog-title');
       var lang = document.documentElement.lang || 'ru';
-      var PAGE_SIZE = 8;
+      // Плотность: 5 рядов по 5 на широком экране, меньше на узком.
+      function pageSize() {
+        var w = window.innerWidth || 1440;
+        return w < 640 ? 10 : w < 960 ? 15 : 25;
+      }
       var state = { page: 1, q: '', brand: '', category: '', sort: '' };
 
       if (!grid.id) grid.id = 'catalog';
@@ -143,6 +148,58 @@ window.__AZBUT_STATIC__=true;
         }
         return out;
       }
+      function setSelect(sel, val) {
+        if (!sel) return;
+        try { sel.value = val; } catch (e) { /* read-only DOM shim */ }
+        Array.prototype.forEach.call(sel.options || [], function (o) {
+          if ((o.getAttribute('value') || '') === val) o.setAttribute('selected', 'selected');
+          else o.removeAttribute('selected');
+        });
+      }
+      // Раздел живёт в адресе, но переход не перезагружает страницу.
+      function readUrl() {
+        try {
+          if (!window.location || !window.location.search) return;
+          var p = new URLSearchParams(window.location.search);
+          state.q = p.get('q') || '';
+          state.brand = p.get('brand') || '';
+          state.category = p.get('category') || '';
+          state.sort = p.get('sort') || '';
+          state.page = Math.max(1, Number(p.get('page')) || 1);
+          var q = filtersForm.querySelector('[name="q"]');
+          if (q) q.value = state.q;
+          setSelect(filtersForm.querySelector('[name="brand"]'), state.brand);
+          setSelect(filtersForm.querySelector('[name="category"]'), state.category);
+          setSelect(filtersForm.querySelector('[name="sort"]'), state.sort);
+        } catch (e) { /* no query / unsupported */ }
+      }
+      function syncUrl() {
+        try {
+          if (!window.history || typeof window.history.replaceState !== 'function' || !window.location) return;
+          var p = new URLSearchParams();
+          if (state.q) p.set('q', state.q);
+          if (state.brand) p.set('brand', state.brand);
+          if (state.category) p.set('category', state.category);
+          if (state.sort) p.set('sort', state.sort);
+          if (state.page > 1) p.set('page', String(state.page));
+          var qs = p.toString();
+          window.history.replaceState(null, '', window.location.pathname + (qs ? '?' + qs : '') + (window.location.hash || ''));
+        } catch (e) { /* ignore */ }
+      }
+      // Мгновенный возврат к началу списка без анимации; только если ушли ниже него.
+      function revealGridTop() {
+        try {
+          if (typeof window.scrollTo !== 'function' || !grid.getBoundingClientRect) return;
+          var y = window.pageYOffset || document.documentElement.scrollTop || 0;
+          var top = grid.getBoundingClientRect().top + y;
+          if (y <= top + 80) return;
+          var root = document.documentElement;
+          var prev = root.style ? root.style.scrollBehavior : '';
+          if (root.style) root.style.scrollBehavior = 'auto';
+          window.scrollTo(0, Math.max(0, top - 90));
+          if (root.style) root.style.scrollBehavior = prev;
+        } catch (e) { /* no scrolling API */ }
+      }
       function syncCategoryNav() {
         document.querySelectorAll('.catalog-cat[data-cat]').forEach(function (a) {
           var active = (a.getAttribute('data-cat') || '') === state.category;
@@ -153,15 +210,20 @@ window.__AZBUT_STATIC__=true;
         if (titleEl) titleEl.textContent = state.category || (lang === 'en' ? 'All products' : 'Все товары');
       }
       function renderCatalog() {
+        var size = pageSize();
         var list = sortCards(cards.filter(matches));
         if (meta) meta.textContent = String(list.length);
         syncCategoryNav();
-        var pages = Math.max(1, Math.ceil(list.length / PAGE_SIZE));
+        var pages = Math.max(1, Math.ceil(list.length / size));
         if (state.page > pages) state.page = pages;
-        var start = (state.page - 1) * PAGE_SIZE;
+        var start = (state.page - 1) * size;
+        var end = Math.min(start + size, list.length);
+        if (rangeEl) rangeEl.textContent = list.length
+          ? (lang === 'en' ? 'showing ' : 'показано ') + (start + 1) + '–' + end + (lang === 'en' ? ' of ' : ' из ') + list.length
+          : '';
         cards.forEach(function (card) { card.hidden = true; });
         list.forEach(function (card) { grid.appendChild(card); });
-        list.slice(start, start + PAGE_SIZE).forEach(function (card) { card.hidden = false; });
+        list.slice(start, end).forEach(function (card) { card.hidden = false; });
         grid.hidden = list.length === 0;
         empty.hidden = list.length > 0;
         ol.innerHTML = '';
@@ -172,7 +234,7 @@ window.__AZBUT_STATIC__=true;
           function addPage(n, label) {
             var li = document.createElement('li');
             var a = document.createElement('a');
-            a.href = '#catalog';
+            a.href = '?page=' + n;
             a.textContent = label || String(n);
             a.setAttribute('data-page', String(n));
             if (!label && n === state.page) { a.className = 'is-active'; a.setAttribute('aria-current', 'page'); }
@@ -209,6 +271,7 @@ window.__AZBUT_STATIC__=true;
         state.category = category ? category.value : '';
         state.sort = sort ? sort.value : '';
         state.page = 1;
+        syncUrl();
         renderCatalog();
       }
       filtersForm.addEventListener('submit', function (e) { e.preventDefault(); readFilters(); });
@@ -225,26 +288,21 @@ window.__AZBUT_STATIC__=true;
       if (resetLink) resetLink.addEventListener('click', function (e) { e.preventDefault(); filtersForm.reset(); readFilters(); });
       document.querySelectorAll('.catalog-cat[data-cat]').forEach(function (a) {
         a.addEventListener('click', function (e) {
+          if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || (typeof e.button === 'number' && e.button !== 0)) return;
           e.preventDefault();
-          var sel = filtersForm.querySelector('[name="category"]');
-          if (sel) {
-            var val = a.getAttribute('data-cat') || '';
-            Array.prototype.forEach.call(sel.options || [], function (o) {
-              if ((o.getAttribute('value') || '') === val) o.setAttribute('selected', 'selected');
-              else o.removeAttribute('selected');
-            });
-          }
+          setSelect(filtersForm.querySelector('[name="category"]'), a.getAttribute('data-cat') || '');
           readFilters();
-          grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          revealGridTop();
         });
       });
       nav.addEventListener('click', function (e) {
         var a = e.target.closest ? e.target.closest('a[data-page]') : null;
-        if (!a) return;
+        if (!a || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
         e.preventDefault();
         state.page = Number(a.getAttribute('data-page')) || 1;
+        syncUrl();
         renderCatalog();
-        grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        revealGridTop();
       });
       document.querySelectorAll('form[method="get"]').forEach(function (form) {
         if (form === filtersForm) return;
@@ -256,9 +314,16 @@ window.__AZBUT_STATIC__=true;
           var target = filtersForm.querySelector('[name="q"]');
           if (input && target) target.value = input.value;
           readFilters();
-          grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          revealGridTop();
         });
       });
+      var resizeTimer;
+      window.addEventListener('resize', function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(renderCatalog, 120);
+      });
+      readUrl();
+      syncUrl();
       renderCatalog();
     }
   }
