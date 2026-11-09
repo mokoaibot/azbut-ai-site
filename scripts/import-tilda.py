@@ -39,6 +39,7 @@ HEADERS = {
 }
 IMG_DIR = ROOT / 'public' / 'assets' / 'img' / 'products'
 PLACEHOLDER = '/assets/img/placeholder.svg'
+CAT_IMG_DIR = ROOT / 'public' / 'assets' / 'img' / 'catalog'
 ROOT_PART = 686800396042
 
 CYR = {
@@ -173,10 +174,38 @@ def local_name(url):
     return hashlib.sha1(url.encode('utf-8')).hexdigest()[:16] + '.webp'
 
 
+def placeholder_for(category):
+    key = slugify(category or 'Разное', 'other')
+    return '/assets/img/catalog/cat-' + key + '.svg'
+
+
+def is_placeholder(path):
+    return not path or path == PLACEHOLDER or path.startswith('/assets/img/catalog/cat-')
+
+
+def write_placeholders(categories):
+    CAT_IMG_DIR.mkdir(parents=True, exist_ok=True)
+    for category in sorted(set(categories)):
+        key = slugify(category or 'Разное', 'other')
+        label = html.escape(plain(category) or 'Разное')
+        initials = ''.join([w[0] for w in re.split(r'\s+', plain(category) or 'Разное') if w][:2]).upper()
+        svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700" role="img" aria-label="{label}">
+  <rect width="700" height="700" fill="#f1eee8"/>
+  <circle cx="350" cy="270" r="118" fill="#fff" stroke="#e3ddd2" stroke-width="3"/>
+  <text x="350" y="292" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="86" font-weight="700" fill="#e6a63e">{html.escape(initials)}</text>
+  <rect x="120" y="430" width="460" height="2" fill="#d8d1c5"/>
+  <text x="350" y="486" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="700" fill="#2b2620">{label}</text>
+  <text x="350" y="528" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="18" letter-spacing="4" fill="#6f685e">АЗБУТ КАТАЛОГ</text>
+  <text x="350" y="566" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#6f685e">Фото уточняется · цена по запросу</text>
+</svg>
+'''
+        (CAT_IMG_DIR / ('cat-' + key + '.svg')).write_text(svg, encoding='utf-8')
+
+
 def download_one(url):
     target = IMG_DIR / local_name(url)
     if target.exists():
-        return url, str(target.relative_to(ROOT / 'public')).replace(os.sep, '/'), None
+        return url, '/assets/img/products/' + target.name, None
     for attempt in range(3):
         try:
             req = urllib.request.Request(url, headers=HEADERS)
@@ -226,11 +255,11 @@ def build_products(raw, image_map, limit=None):
             n += 1
         used_slugs.add(slug)
         gallery = [image_map.get(u, PLACEHOLDER) for u in image_urls(p)]
-        gallery = [g for g in gallery if g]
+        gallery = [g for g in gallery if g and not is_placeholder(g)]
         if not gallery:
-            gallery = [PLACEHOLDER]
-        # De-duplicate placeholder while keeping at least one image.
-        gallery = list(dict.fromkeys(gallery)) or [PLACEHOLDER]
+            gallery = [placeholder_for(category)]
+        # De-duplicate while keeping at least one image.
+        gallery = list(dict.fromkeys(gallery))
         summary = clip(p.get('descr') or p.get('text') or title, 230)
         description = clip(p.get('text') or p.get('descr') or title, 1400)
         specs = [
@@ -341,6 +370,7 @@ def main():
         image_map = {u: PLACEHOLDER for u in urls}
 
     products = build_products(raw, image_map, limit=args.limit or None)
+    write_placeholders(p['category'] for p in products)
     existing_brands = json.loads((ROOT / 'seed' / 'brands.json').read_text(encoding='utf-8'))
     brands = build_brands(products, existing_brands)
 
@@ -350,7 +380,7 @@ def main():
         (ROOT / folder / 'products.json').write_text(payload_products, encoding='utf-8')
         (ROOT / folder / 'brands.json').write_text(payload_brands, encoding='utf-8')
 
-    with_photo = sum(1 for p in products if p['image'] != PLACEHOLDER)
+    with_photo = sum(1 for p in products if not is_placeholder(p['image']))
     cats = {}
     for p in products:
         cats[p['category']] = cats.get(p['category'], 0) + 1

@@ -92,7 +92,7 @@ git add -A
 if git diff --cached --quiet; then
   echo '[push] Изменений нет — удалённый main уже актуален.'
 else
-  git commit -q -m 'feat: import real 971-product catalog and rebuild Pages'
+  git commit -q -m 'feat: BIKAI-style catalog layout with 971 real products'
 fi
 
 echo "[push] Отправляю main..."

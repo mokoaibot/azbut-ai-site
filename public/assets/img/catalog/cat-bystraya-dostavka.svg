@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700" role="img" aria-label="Быстрая доставка">
+  <rect width="700" height="700" fill="#f1eee8"/>
+  <circle cx="350" cy="270" r="118" fill="#fff" stroke="#e3ddd2" stroke-width="3"/>
+  <text x="350" y="292" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="86" font-weight="700" fill="#e6a63e">БД</text>
+  <rect x="120" y="430" width="460" height="2" fill="#d8d1c5"/>
+  <text x="350" y="486" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="700" fill="#2b2620">Быстрая доставка</text>
+  <text x="350" y="528" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="18" letter-spacing="4" fill="#6f685e">АЗБУТ КАТАЛОГ</text>
+  <text x="350" y="566" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#6f685e">Фото уточняется · цена по запросу</text>
+</svg>

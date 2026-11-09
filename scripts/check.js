@@ -49,7 +49,8 @@ function hiddenValue(html, name) {
 
     const catalog = await get('/catalog?q=звездочка');
     assert(catalog.status === 200 && /звездочк/i.test(catalog.text), 'поиск по каталогу работает');
-    assert(/class="product-card" data-brand=/.test(catalog.text), 'карточки несут data-атрибуты для клиентских фильтров');
+    assert(/class="product-card catalog-card"[^>]*data-brand=/.test(catalog.text), 'карточки несут data-атрибуты для клиентских фильтров');
+    assert(/class="catalog-side"/.test(catalog.text) && /catalog-cat/.test(catalog.text), 'каталог: боковая колонка с разделами как у образца');
 
     const product = await get('/product/' + encodeURIComponent(sample.slug));
     assert(product.status === 200 && /"@type":"Product"/.test(product.text), 'карточка товара + Product schema');

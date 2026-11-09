@@ -65,13 +65,14 @@
     });
   });
 
-  // --- GitHub Pages: client-side catalog (all cards live in one static HTML) ---
+  // --- GitHub Pages: client-side catalog (BIKAI-like sidebar + grid) ---
   if (STATIC) {
-    var grid = document.querySelector('.product-grid');
-    var filtersForm = document.querySelector('.filters');
+    var grid = document.querySelector('.catalog-grid');
+    var filtersForm = document.querySelector('.catalog-filters');
     if (grid && filtersForm) {
-      var cards = Array.prototype.slice.call(grid.querySelectorAll('.product-card'));
-      var meta = document.querySelector('.catalog-meta strong');
+      var cards = Array.prototype.slice.call(grid.querySelectorAll('.catalog-card'));
+      var meta = document.querySelector('#catalog-count');
+      var titleEl = document.querySelector('#catalog-title');
       var lang = document.documentElement.lang || 'ru';
       var PAGE_SIZE = 8;
       var state = { page: 1, q: '', brand: '', category: '', sort: '' };
@@ -85,12 +86,16 @@
         : 'Статическая версия Pages: поиск, фильтры и пагинация работают в браузере.';
       filtersForm.parentNode.insertBefore(note, filtersForm.nextSibling);
 
-      var empty = document.createElement('div');
-      empty.className = 'empty-state';
-      empty.innerHTML = '<p>' + (lang === 'en'
-        ? 'Nothing found. Try changing the filters.'
-        : 'Ничего не найдено. Измените фильтры.') + '</p>';
-      grid.parentNode.insertBefore(empty, grid.nextSibling);
+      var empty = document.getElementById('catalog-empty');
+      if (!empty) {
+        empty = document.createElement('div');
+        empty.className = 'empty-state';
+        empty.id = 'catalog-empty';
+        empty.innerHTML = '<p>' + (lang === 'en'
+          ? 'Nothing found. Try changing the filters.'
+          : 'Ничего не найдено. Измените фильтры.') + '</p>';
+        grid.parentNode.insertBefore(empty, grid.nextSibling);
+      }
 
       var nav = document.createElement('nav');
       nav.className = 'pagination';
@@ -115,7 +120,7 @@
             card.getAttribute('data-title') || '',
             card.getAttribute('data-sku') || '',
             card.getAttribute('data-brand') || '',
-            cardText(card, '.product-card__summary')
+            cardText(card, '.catalog-card__tagline')
           ].join(' ').toLowerCase();
           if (hay.indexOf(state.q.toLowerCase()) === -1) return false;
         }
@@ -137,9 +142,19 @@
         }
         return out;
       }
+      function syncCategoryNav() {
+        document.querySelectorAll('.catalog-cat[data-cat]').forEach(function (a) {
+          var active = (a.getAttribute('data-cat') || '') === state.category;
+          a.setAttribute('class', active ? 'catalog-cat is-active' : 'catalog-cat');
+          if (active) a.setAttribute('aria-current', 'page');
+          else a.removeAttribute('aria-current');
+        });
+        if (titleEl) titleEl.textContent = state.category || (lang === 'en' ? 'All products' : 'Все товары');
+      }
       function renderCatalog() {
         var list = sortCards(cards.filter(matches));
         if (meta) meta.textContent = String(list.length);
+        syncCategoryNav();
         var pages = Math.max(1, Math.ceil(list.length / PAGE_SIZE));
         if (state.page > pages) state.page = pages;
         var start = (state.page - 1) * PAGE_SIZE;
@@ -205,8 +220,23 @@
           debounce = setTimeout(readFilters, 180);
         });
       }
-      var resetLink = filtersForm.querySelector('.btn--ghost');
+      var resetLink = filtersForm.querySelector('.catalog-reset');
       if (resetLink) resetLink.addEventListener('click', function (e) { e.preventDefault(); filtersForm.reset(); readFilters(); });
+      document.querySelectorAll('.catalog-cat[data-cat]').forEach(function (a) {
+        a.addEventListener('click', function (e) {
+          e.preventDefault();
+          var sel = filtersForm.querySelector('[name="category"]');
+          if (sel) {
+            var val = a.getAttribute('data-cat') || '';
+            Array.prototype.forEach.call(sel.options || [], function (o) {
+              if ((o.getAttribute('value') || '') === val) o.setAttribute('selected', 'selected');
+              else o.removeAttribute('selected');
+            });
+          }
+          readFilters();
+          grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+      });
       nav.addEventListener('click', function (e) {
         var a = e.target.closest ? e.target.closest('a[data-page]') : null;
         if (!a) return;
